@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>765291422247-149clk026mnt2g152j840190b9e4ma1u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.765291422247-149clk026mnt2g152j840190b9e4ma1u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCVl884tmlSG0aHdSkWBupFphVsDBXtdk4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>765291422247</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ciyashopflutter.ciyashop</string>
+	<key>PROJECT_ID</key>
+	<string>ciyashopflutter</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ciyashopflutter.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:765291422247:ios:18b49bb0def3bf751d2402</string>
+</dict>
+</plist>

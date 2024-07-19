@@ -1,0 +1,391 @@
+{
+
+  "skip":"スキップ",
+  "next":"次",
+  "done":"完了",
+  "allrigtsreserved" :"© ciyashop 2023 | 全著作権所有",
+
+
+  "search":"探す",
+  "cart":"カート",
+  "account":"アカウント",
+  "wishlist":"ウィッシュリスト",
+
+  "title_intro_one": "Eコマースアプリ",
+  "intro_one": "人生はすでに十分に難しいです。 もう少し簡単にしましょう。",
+  "title_intro_two": "アイテムを選択",
+  "intro_two": "家族みんなでわくわくするお店です。",
+  "title_intro_three": "商品を購入",
+  "intro_three": "オンラインショップの最大の旅。",
+  "get_started": "始めましょう",
+
+  "shopnow":"今すぐ購入",
+  "viewall":"すべて表示",
+  "off":"オフ",
+  "items":"アイテム",
+  "remove":"削除する",
+  "edit":"編集",
+  "add":"追加",
+  "movetobag":"バッグに移動",
+  "ok":"ok",
+  "yes":"はい",
+  "no":"番号",
+  "allcategory":"すべてのカテゴリー",
+
+
+  "login":"ログインする",
+  "signin": "サインイン",
+  "signout":"サインアウト",
+  "myorders":"私の注文",
+  "myaddresses":"私の住所",
+  "choosecurrency":"通貨を選んでください",
+  "chooselanguage":"言語を選択",
+  "download":"ダウンロード",
+  "mycoupons":"私のクーポン",
+  "coupons":"クーポン",
+  "mypoints":"マイポイント",
+  "aboutus":"私たちに関しては",
+  "accountsettings":"アカウント設定",
+  "notification":"お知らせ",
+  "notifications":"通知",
+
+  "productprice":"製品価格",
+  "otherproductsvendor":"このベンダーの他の製品",
+
+  "nonotificationyet":"まだ通知はありません",
+  "removeall":"すべて削除する",
+  "removeallmessage":"すべての通知を削除してもよろしいですか？",
+
+  "ratetheapp":"アプリを評価する",
+  "clearhistory":"履歴をクリア",
+
+  "clear":"晴れ",
+
+  "expire":"有効期限 : ",
+  "remaining":"残り : ",
+
+  "recentlyviewedproduct":"最近見た製品",
+
+  "clearhistoryalert":"これにより、このデバイスから閲覧履歴、検索履歴が完全に削除されます。",
+
+
+  "setting":"設定",
+  "notificationpermission":"通知の許可が拒否されました。設定から許可してください。",
+
+
+  "signoutalert":"本当にアカウントからサインアウトしますか？",
+
+  "camera":"カメラ",
+  "gallery":"ギャラリー",
+
+  "nopointsearned":"ポイントは獲得できません",
+  "purchaseproductearnpoints":"製品を購入してポイントを獲得してください。",
+
+  "event":"イベント",
+  "date":"日付",
+  "points":"ポイント",
+
+  "browsesomeotheritem":"他のアイテムを閲覧する",
+  "noanyproductavailable":"利用可能な製品はありません",
+
+
+
+  "email":"eメール",
+  "password":"パスワード",
+  "oldpassword":"以前のパスワード",
+  "newpassword":"新しいパスワード",
+  "retypepassword":"パスワードを再入力してください",
+  "forgotpassword":"パスワードをお忘れですか？",
+  "signup":"サインアップ",
+  "or":"または",
+  "selectcountry":"国を選択",
+  "close":"閉じる",
+
+  "endofthesale":"セール終了",
+
+  "donthaveaccount":"アカウントをお持ちではありませんか？今すぐサインアップ",
+  "signupnow":"今すぐサインアップ",
+
+  "alreadyhaveaccount":"すでにアカウントをお持ちですか？今すぐサインイン",
+  "signinnow":"今すぐサインイン",
+
+  "enteremail":"メールアドレスを入力してください",
+  "entervalidemail":"有効なメールアドレスを入力してください",
+  "enterpassword":"パスワードを入力する",
+  "enterconfirmpassword":"パスワードの確認を入力してください",
+  "entercontactno":"連絡先番号を入力してください",
+
+  "confirmpasswordmatch":"パスワードとパスワードの確認が一致しません",
+
+  "entercurrentpassword":"現在のパスワードを入力してください",
+  "passwordnotcorrect":"メールアドレスまたはパスワードが正しくありません",
+  "enternewpassword":"新しいパスワードを入力してください",
+
+  "passwordchangedsuccessfully":"パスワードは正常に変更されました",
+
+  "provideemailtofacebook":"facebookアカウントにメールidを提供する",
+
+  "enterusername":"ユーザーネームを入力してください",
+
+  "nocurrencyfound": "通貨が見つかりません",
+  "nolanguagefound": "言語が見つかりません",
+
+
+  "emailid":"電子メールid",
+  "username":"ユーザー名",
+  "confirmpassword":"パスワードを認証する",
+
+  "addaddress":"新しい住所を追加する",
+  "pleaseaddaddress":"住所を追加してください",
+
+
+  "billingaddress":"請求先住所",
+  "shippingaddress":"お届け先の住所",
+
+  "addbillingaddress":"請求先住所を追加する",
+  "addshippingaddress":"配送先住所を追加する",
+
+  "removeaddresss":"本当にアドレスを削除しますか？",
+
+  "name":"名前",
+  "firstname":"ファーストネーム",
+  "lastname":"苗字",
+  "pincode":"ピンコード",
+  "address1":"住所（1",
+  "address2":"アドレス2",
+  "citytown":"市/町",
+  "state":"状態",
+  "company":"会社",
+  "phonenumber":"電話番号",
+
+  "save":"セーブ",
+  "cancel":"キャンセル",
+
+  "scratchherecode":"ここでスクラッチしてコードを取得します",
+  "scratchherecouponcode":"ここでスクラッチしてクーポンコードを取得します。",
+  "couponcode":"クーポンコード",
+
+  "couponcodecopied":"クーポンコードがクリップボードにコピーされます",
+
+  "norewardsyet":"まだ報酬はありません.. !!",
+
+  "version":"バージョン",
+  "termscondition":"利用規約",
+  "privacypolicy":"個人情報保護方針",
+  "followus":"フォローする",
+  "moreaboutus":"私たちについての詳細",
+
+
+  "accountsetting":"アカウントの設定",
+  "dateofbirth":"生年月日",
+  "gender":"性別",
+  "mobilenumber":"携帯電話番号",
+  "changepassword":"パスワードを変更する",
+  "deactivateaccount":"アカウントを削除する",
+  "confirmdeactivation":"削除を確認",
+
+
+  "informationupdatedsuccess":"情報が正常に更新されました",
+
+  "deactivatedsuccess":"アカウントが正常に無効化されました",
+  "confirmdeactivate":"プロファイルを無効にしてもよろしいですか？\n はいの場合、プロファイルを再度アクティブにするには、管理者に連絡する必要があります。",
+
+
+  "contactus":"お問い合わせ",
+  "contactnumber":"連絡先番号",
+  "subject":"件名",
+  "message":"メッセージ",
+  "send":"送信",
+
+  "entername":"あなたの名前を入力してください",
+  "entersubject":"件名を入力してください",
+  "entermessage":"メッセージを入力してください",
+  "messagesent":"送信されたメッセージ",
+
+  "orderid":"注文id:",
+  "totalamount":"合計金額:",
+  "quantity":"量:",
+  "details":"詳細",
+  "retry":"リトライ",
+
+  "orderdetails":"注文詳細",
+  "cancelorder":"注文をキャンセルする",
+
+
+  "noorderyet":"まだ注文はありません",
+  "noorderdescription":"閲覧するか、ウィッシュリストを作成するか、購入するだけです。",
+  "trackingnumberis":"追跡番号は",
+
+  "deliveredsoon":"間もなく配信",
+  "orderpendingstate":"注文は保留状態です",
+  "orderunderprocessing":"注文は処理中です",
+  "orderonhold":"注文は保留中です",
+  "delivered":"配信済み",
+  "deliveredon":"納品日",
+  "ordercancelled":"注文はキャンセルされました",
+  "refundedorder":"この注文に対して返金されます",
+  "orderfailed":"注文に失敗しました",
+  "deliversoon":"ご注文はまもなく配達されます",
+
+
+  "order":"注文",
+  "wasplaced":"に置かれました",
+  "andcurrently":"そして現在",
+
+  "ordercancelledsuccess":"注文は正常にキャンセルされました。",
+
+  "thankyou":"ありがとうございました",
+  "orderplacedsuccess":"ご注文は正常に行われました。",
+  "notifyinfewmoments":"すぐに通知します。",
+
+
+  "shoppingbag":"ショッピングバッグ",
+  "continueshopping":"ショッピングを続ける",
+
+  "addtocartmessage":"アイテムを参照してカートに追加するだけです。",
+  "addtowishlistmessage":"アイテムを参照してウィッシュリストに追加するだけです。",
+
+  "itemalreadyincart":"すでにカートに入っている商品",
+  "cartisempty":"カートが空です",
+  "noproductfound":"製品が見つかりません",
+  "delete":"削除",
+  "continuetocheckout":"チェックアウトを続行",
+
+
+  "searchlistempty":"検索リストが空です",
+  "browseourstore":"私たちの店を閲覧し、購入する他のアイテムを見てください。",
+
+  "searchhere":"検索...",
+
+  "resetyourworld":"あなたの世界をリセット",
+  "resetpassworddescription":"パスワードのことを忘れがちです。以下にメールアドレスを入力し、[パスワードのリセットをリクエスト]ボタンをクリックしてください。よろしくお願いします！",
+  "requestpasswordreset":"パスワードのリセットをリクエストする",
+
+  "resetyourpassword":"あなたのパスワードをリセット",
+  "enterpin":"お送りしたpinを登録済みのメールアドレスに入力してください。",
+  "setnewpassword":"新しいパスワードを設定する",
+
+  "pinincorrect":"入力したpinが正しくありません",
+  "enterenewpassword":"新しいパスワードを入力してください",
+  "passwordnotmatch":"パスワードとパスワードの確認が一致しません",
+
+  "pin":"ピン",
+
+
+  "verificationcode":"検証コード",
+  "verificationcodedescription":"確認コードが携帯電話番号に送信されます。確認コードを入力してください。",
+  "validateotp":"otpを検証する",
+  "resendotp":"otpを再送する",
+  "enterverificationcode":"認証コードを入力してください",
+
+  "otpsentagain":"otpはに再度送信されます",
+
+
+  "passwordupdatesuccess":"パスワードが正常に更新されました",
+
+  "youhavepoints":"あなたはポイントを持っています",
+
+  "subtotal":"小計",
+  "shipping":"運送",
+  "amountpayable":"支払い可能な金額",
+
+  "paymentmethod":"支払方法：",
+  "paymentdetails":"支払詳細",
+  "sortby":"並び替え",
+  "filter":"フィルタ",
+  "color" : "色",
+  "size":"サイズ",
+  "pricerange":"価格帯",
+  "selectall":"すべて選択",
+  "category":"カテゴリー",
+  "brand":"ブランド",
+  "rating":"評価",
+  "clearfilter":"フィルターをクリア",
+  "availability":"可用性",
+  "outofstock":"在庫切れ",
+  "instock":"在庫あり",
+
+  "newestfirst":"最新ファースト",
+  "popularity":"人気",
+  "pricelowtohigh":"価格-低から高",
+  "pricehightolow":"価格-高から低",
+
+  "buynow":"今買う",
+  "addtocart":"カートに追加",
+  "info":"情報",
+  "deliveryoptions":"配送オプション",
+  "enteryourpincode":"pinコードを入力してください",
+  "check":"小切手",
+  "soldby":"により販売されています",
+  "sellerinformation":"販売者情報",
+  "contactseller":"売り手に連絡する",
+  "viewstore":"ストアを表示",
+  "quickoverview":"クイック概要",
+  "productdetails":"製品詳細",
+  "more":"もっと...",
+  "ratingsnreviews":"評価とレビュー",
+  "ratings":"評価",
+  "reviews":"レビュー",
+  "review":"レビュー",
+  "ratenwritereview":"レビューの評価と書き込み",
+  "viewallreviews":"すべてのレビューを見る",
+
+  "rateproduct":"製品を評価する",
+  "comment":"コメント",
+  "submit":"参加する",
+  "image":"画像",
+  "quick":"クイック",
+
+  "removefromcart":"カートから削除してもよろしいですか？",
+  "removefromwishlist":"ウィッシュリストから削除してもよろしいですか？",
+
+  "itemaddedwishlist":"ウィッシュリストにアイテムが追加されました。",
+  "itemremovedwishlist":"ウィッシュリストから削除されたアイテム。",
+
+  "itemaddedcart":"カートにアイテムが正常に追加されました",
+  "combinationnotexists":"この組み合わせは存在しません。別のバリアントを選択してください。",
+
+  "gotocart":"カートに移動",
+
+  "relatedproducts":"関連製品",
+
+  "giverating":"評価をお願いします",
+
+
+  "availableat":"で入手可能",
+  "available":"利用可能",
+  "cashondelivery":"代金引換",
+  "notavailable":"利用不可",
+  "deliverydatahelptext":"納期ヘルプテキスト",
+  "pincodenotblank":"ピンコードは空白にしないでください。",
+  "entervalidpincode":"有効なpinコードを入力してください",
+
+  "invalidcontactno":"連絡先番号が無効です",
+  "whatsappnotinstalled":"whatsappがデバイスにインストールされていません。",
+
+  "ratingurlnotavailable":"評価リンクが設定されていません",
+  "geofencemessage":"当店リージョンに入りました",
+  "websitenotvalid":"ウェブサイトが無効です",
+
+
+  "walletbalance":"ウォレットバランス",
+  "wallet":"財布",
+  "wallet_transaction_history":"ウォレットの取引履歴",
+
+  "orderplacedfailure" : "注文はキャンセルされました",
+  "orderplacedfailuresubmessage" : "残念ながら、元の銀行/販売者が取引を拒否したため、注文を処理できません。",
+
+  "technicalissue":"技術的な問題があります。しばらくしてからお試しください。",
+  "noratingurl" : "評価urlが設定されていません",
+
+  "enterfirstname":"名を入力してください",
+  "enterlastname":"姓を入力してください",
+  "enterpincode":"ピンコードを入力してください",
+  "enteraddress1":"住所1を入力してください",
+  "enteraddress2":"住所2を入力してください",
+  "enterphonenumber":"電話番号を入力してください",
+  "entercompany":"会社に入ってください",
+
+  "logoutnotexistuser" : "あなたのアカウントは管理者によって削除されました。 ログアウトする必要があります。"
+
+}

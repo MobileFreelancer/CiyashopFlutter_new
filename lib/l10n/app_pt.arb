@@ -1,0 +1,391 @@
+{
+
+  "skip":"pular",
+  "next":"próxima",
+  "done":"feita",
+  "allrigtsreserved" :"© ciyashop 2023 | todos os direitos reservados",
+
+
+  "search":"pesquisa",
+  "cart":"carrinho",
+  "account":"conta",
+  "wishlist":"lista de desejos",
+  "signin": "entrar",
+  "title_intro_one": "Applicazione per l'e-commerce",
+  "intro_one": "La vita è già abbastanza dura. Rendiamolo un po' più facile.",
+  "title_intro_two": "Scegli Articolo",
+  "intro_two": "Un luogo emozionante per l'intero negozio di famiglia.",
+  "title_intro_three": "Compra articolo",
+  "intro_three": "Il più grande viaggio del negozio online.",
+  "get_started": "Iniziare",
+
+  "shopnow":"compre agora",
+  "viewall":"ver tudo",
+  "off":"fora",
+  "items":"itens",
+  "remove":"remover",
+  "edit":"editar",
+  "add":"adicionar",
+  "movetobag":"mover para a bolsa",
+  "ok":"está bem",
+  "yes":"sim",
+  "no":"não",
+  "allcategory":"todas as categorias",
+
+
+  "login":"conecte-se",
+  "signout":"sair",
+  "myorders":"minhas ordens",
+  "myaddresses":"meus endereços",
+  "choosecurrency":"escolha a moeda",
+  "chooselanguage":"escolha o seu idioma",
+  "download":"download",
+  "mycoupons":"my coupons",
+  "coupons":"cupons",
+  "mypoints":"meus pontos",
+  "aboutus":"sobre nós",
+  "accountsettings":"configurações da conta",
+  "notification":"notificação",
+  "notifications":"notificações",
+
+  "productprice":"preço do produto",
+  "otherproductsvendor":"outros produtos deste fornecedor",
+
+  "nonotificationyet":"ainda sem notificação",
+  "removeall":"deletar tudo",
+  "removeallmessage":"tem certeza que deseja remover todas as notificações?",
+
+  "contactus":"contate-nos",
+  "ratetheapp":"avalie o aplicativo",
+  "clearhistory":"limpar histórico",
+
+  "clear":"clara",
+
+  "expire":"vence em:",
+  "remaining":"restante :",
+
+  "recentlyviewedproduct":"produto visto recentemente",
+
+  "clearhistoryalert":"isso exclui permanentemente seu histórico de navegação e pesquisa deste dispositivo.",
+
+
+  "setting":"configuração",
+  "notificationpermission":"permissão para notificação negada. por favor, permita nas configurações.",
+
+
+  "signoutalert":"tem certeza de que deseja sair da sua conta?",
+
+  "camera":"câmera",
+  "gallery":"galeria",
+
+  "nopointsearned":"nenhum ponto ganho",
+  "purchaseproductearnpoints":"compre o produto e ganhe pontos.",
+
+  "event":"evento",
+  "date":"encontro",
+  "points":"pontos",
+
+  "browsesomeotheritem":"procure algum outro item",
+  "noanyproductavailable":"nenhum produto disponível",
+
+  "email":"o email",
+  "password":"senha",
+  "oldpassword":"senha antiga",
+  "newpassword":"nova senha",
+  "retypepassword":"redigite a senha",
+  "forgotpassword":"forgot password?",
+  "signup":"inscrever-se",
+  "or":"ou",
+  "selectcountry":"selecione um pais",
+  "close":"fechar",
+
+  "endofthesale":"fim da venda",
+
+  "donthaveaccount":"não tem conta? inscreva-se agora",
+  "signupnow":"inscreva-se agora",
+
+  "alreadyhaveaccount":"já tem uma conta? faça seu login agora mesmo",
+  "signinnow":"faça seu login agora mesmo",
+
+  "enteremail":"insira o endereço de e-mail",
+  "entervalidemail":"insira um endereço de e-mail válido",
+  "enterpassword":"digite a senha",
+  "enterconfirmpassword":"digite a senha de confirmação",
+  "entercontactno":"insira o número do contato",
+
+  "confirmpasswordmatch":"a senha e a confirmação da senha não correspondem",
+
+  "entercurrentpassword":"digite sua senha atual",
+  "passwordnotcorrect":"seu endereço de e-mail ou senha não está correto",
+  "enternewpassword":"digite sua nova senha",
+
+  "passwordchangedsuccessfully":"senha alterada com sucesso",
+
+  "provideemailtofacebook":"forneça um id de email para sua conta do facebook",
+
+  "enterusername":"insira nome de usuário",
+
+  "nocurrencyfound": "nenhuma moeda encontrada",
+  "nolanguagefound": "nenhum idioma encontrado",
+
+
+  "emailid":"identificação do email",
+  "username":"nome do usuário",
+  "contactnumber":"número de contato",
+  "confirmpassword":"confirme a senha",
+
+  "addaddress":"adicionar novo endereço",
+  "pleaseaddaddress":"adicione o endereço",
+
+
+  "billingaddress":"endereço de cobrança",
+  "shippingaddress":"endereço de entrega",
+
+  "addbillingaddress":"adicionar endereço de cobrança",
+  "addshippingaddress":"adicionar endereço de entrega",
+
+  "removeaddresss":"tem certeza que deseja remover o endereço?",
+
+  "name":"nome",
+  "firstname":"primeiro nome",
+  "lastname":"último nome",
+  "pincode":"pincode",
+  "address1":"endereço 1",
+  "address2":"endereço 2",
+  "citytown":"cidade",
+  "state":"estado",
+  "company":"companhia",
+  "phonenumber":"número de telefone",
+
+  "save":"salve ",
+  "cancel":"cancelar",
+
+  "scratchherecode":"raspe aqui para obter o código",
+  "scratchherecouponcode":"raspe aqui para obter o código do cupom.",
+  "couponcode":"código do cupom",
+
+  "couponcodecopied":"o código do cupom é copiado para a sua área de transferência",
+
+  "norewardsyet":"ainda não há recompensas .. !!",
+
+
+  "version":"versão",
+  "termscondition":"termos e condições",
+  "privacypolicy":"política de privacidade",
+  "followus":"siga-nos",
+  "moreaboutus":"mais sobre nós",
+
+
+  "accountsetting":"configurações de conta",
+  "dateofbirth":"data de nascimento",
+  "gender":"gênero",
+  "mobilenumber":"número de celular",
+  "changepassword":"mudar senha",
+  "deactivateaccount":"deletar conta",
+  "confirmdeactivation":"confirmar exclusão",
+
+
+  "informationupdatedsuccess":"informação atualizada com sucesso",
+
+  "deactivatedsuccess":"sua conta foi desativada com sucesso",
+  "confirmdeactivate":"tem certeza que deseja desativar seu perfil? \n se sim, para reativar seu perfil, você precisa entrar em contato com o administrador.",
+
+
+  "subject":"sujeita",
+  "message":"mensagem",
+  "send":"enviar",
+
+  "entername":"digite seu nome",
+  "entersubject":"digite o assunto",
+  "entermessage":"digite a mensagem",
+  "messagesent":"mensagem enviada",
+
+  "orderid":"id do pedido:",
+  "totalamount":"valor total:",
+  "quantity":"quantidade:",
+  "details":"detalhes",
+  "retry":"tentar novamente",
+
+  "orderdetails":"detalhes do pedido",
+  "cancelorder":"cancelar pedido",
+
+
+  "noorderyet":"nenhum pedido ainda",
+  "noorderdescription":"basta navegar, criar uma lista de desejos ou fazer uma compra.",
+  "trackingnumberis":"o número de rastreamento é",
+
+  "deliveredsoon":"entregue em breve",
+  "orderpendingstate":"o pedido está em estado pendente",
+  "orderunderprocessing":"o pedido está em processamento",
+  "orderonhold":"o pedido está em espera",
+  "delivered":"entregue",
+  "deliveredon":"entregue em",
+  "ordercancelled":"o pedido foi cancelado",
+  "refundedorder":"você foi reembolsado por este pedido",
+  "orderfailed":"o pedido falhou",
+  "deliversoon":"seu pedido será entregue em breve",
+
+
+  "order":"ordem",
+  "wasplaced":"foi colocado em",
+  "andcurrently":"e atualmente",
+
+  "ordercancelledsuccess":"pedido cancelado com sucesso.",
+
+  "thankyou":"obrigado",
+  "orderplacedsuccess":"seu pedido foi feito com sucesso.",
+  "notifyinfewmoments":"você notificará em poucos momentos.",
+
+
+  "shoppingbag":"bolsa de compras",
+  "continueshopping":"continue comprando",
+
+  "addtocartmessage":"basta navegar e adicionar o item ao carrinho.",
+  "addtowishlistmessage":"basta navegar e adicionar o item à lista de desejos.",
+
+  "itemalreadyincart":"item já no carrinho",
+  "cartisempty":"carrinho esta vazio",
+  "noproductfound":"nenhum produto encontrado",
+  "delete":"excluir",
+  "continuetocheckout":"continuar para o checkout",
+
+
+  "searchlistempty":"a lista de pesquisa está vazia",
+  "browseourstore":"navegue em nossa loja e dê uma olhada em outros itens para comprar.",
+
+  "searchhere":"procure aqui...",
+
+  "resetyourworld":"reinicie o seu mundo",
+  "resetpassworddescription":"muitas vezes é esquecido que coisas de senha. digite seu endereço de e-mail abaixo e clique no botão 'solicitar redefinição de senha'. entraremos em contato com você de forma adequada!",
+  "requestpasswordreset":"solicitar redefinição de senha",
+
+  "resetyourpassword":"redefina sua senha",
+  "enterpin":"digite o pin que enviamos a você em seu endereço de e-mail registrado.",
+  "setnewpassword":"definir nova senha",
+
+  "pinincorrect":"o pin inserido não está correto",
+  "enterenewpassword":"digite sua nova senha",
+  "passwordnotmatch":"a senha e a confirmação da senha não correspondem",
+
+  "pin":"pin",
+
+
+  "verificationcode":"código de verificação",
+  "verificationcodedescription":"o código de verificação é enviado para o número do celular. insira o código de verificação.",
+  "validateotp":"validar otp",
+  "resendotp":"reenviar otp",
+  "enterverificationcode":"digite o código de verificação",
+
+  "otpsentagain":"otp é enviado novamente em",
+
+  "passwordupdatesuccess":"sua senha foi atualizada com sucesso",
+
+  "youhavepoints":"você tem pontos",
+
+  "subtotal":"subtotal",
+  "shipping":"remessa",
+  "amountpayable":"quantidade pagável",
+
+  "paymentmethod":"forma de pagamento:",
+  "paymentdetails":"detalhes do pagamento",
+  "sortby":"ordenar por",
+  "filter":"filtro",
+  "color" : "cor",
+  "size":"tamanho",
+  "pricerange":"faixa de preço",
+  "selectall":"selecionar tudo",
+  "category":"categoria",
+  "brand":"marca",
+  "rating":"avaliação",
+  "clearfilter":"filtro limpo",
+  "availability":"disponibilidade",
+  "outofstock":"fora de estoque",
+  "instock":"em estoque",
+
+  "newestfirst":"os mais novos primeiro",
+  "popularity":"popularidade",
+  "pricelowtohigh":"preço - baixo para alto",
+  "pricehightolow":"preço - alto para baixo",
+
+  "buynow":"compre agora",
+  "addtocart":"adicionar ao carrinho",
+  "info":"informações",
+  "deliveryoptions":"opções de entrega",
+  "enteryourpincode":"digite seu código pin",
+  "check":"verifica",
+  "soldby":"vendido por",
+  "sellerinformation":"informações do vendedor",
+  "contactseller":"entre em contato com o vendedor",
+  "viewstore":"ver loja",
+  "quickoverview":"visão geral rápida",
+  "productdetails":"detalhes do produto",
+  "more":"mais...",
+  "ratingsnreviews":"avaliações e críticas",
+  "ratings":"avaliações",
+  "reviews":"avaliações",
+  "review":"reveja",
+  "ratenwritereview":"avaliar e escrever comentário",
+  "viewallreviews":"ver todas as críticas",
+
+  "rateproduct":"avaliar produto",
+  "comment":"comente",
+  "submit":"enviar",
+  "image":"imagem",
+  "quick":"rápida",
+
+  "removefromcart":"tem certeza que deseja remover do carrinho?",
+  "removefromwishlist":"tem certeza que deseja remover da lista de desejos?",
+
+  "itemaddedwishlist":"item adicionado à sua lista de desejos.",
+  "itemremovedwishlist":"item removido da sua lista de desejos.",
+
+  "itemaddedcart":"item adicionado ao seu carrinho com sucesso",
+  "combinationnotexists":"esta combinação não existe. escolha outra variante.",
+
+
+  "gotocart":"vá para o carrinho",
+
+
+  "relatedproducts":"produtos relacionados",
+
+  "giverating":"por favor, dê suas avaliações",
+
+
+  "availableat":"disponível em",
+  "available":"acessível",
+  "cashondelivery":"dinheiro na entrega",
+  "notavailable":"não disponível",
+  "deliverydatahelptext":"texto de ajuda da data de entrega",
+  "pincodenotblank":"pincode não deve ficar em branco.",
+  "entervalidpincode":"digite o código-fonte válido",
+
+
+  "invalidcontactno":"número de contato inválido",
+  "whatsappnotinstalled":"o whatsapp não está instalado no seu dispositivo.",
+
+  "ratingurlnotavailable":"link de avaliação não definido",
+  "geofencemessage":"você entrou em nossa região de loja",
+  "websitenotvalid":"o site não é válido",
+
+
+  "walletbalance":"saldo da carteira",
+  "wallet":"carteira",
+  "wallet_transaction_history":"histórico de transações da carteira",
+
+  "orderplacedfailure" : "pedido cancelado",
+  "orderplacedfailuresubmessage" : "infelizmente, seu pedido não pode ser processado porque o banco / comerciante de origem recusou sua transação.",
+
+  "technicalissue":"existe algum problema técnico. por favor, tente depois de algum tempo.",
+  "noratingurl" : "nenhum url de avaliação foi definido",
+
+  "enterfirstname":"por favor, insira o primeiro nome",
+  "enterlastname":"por favor, digite o sobrenome",
+  "enterpincode":"por favor, insira o código pin",
+  "enteraddress1":"por favor, digite o endereço1",
+  "enteraddress2":"por favor, digite o endereço2",
+  "enterphonenumber":"por favor, insira o número de telefone",
+  "entercompany":"por favor, insira a empresa",
+
+  "logoutnotexistuser" : "sua conta foi excluída pelo administrador. você deve ter que sair."
+
+}

@@ -1,0 +1,382 @@
+{
+    "skip":"تخطى",
+    "next":"التالى",
+    "done":"فهمتك",
+    "allrigtsreserved" :"© ciyashop 2023 | كل الحقوق محفوظة",
+    "search":"بحث",
+    "cart":"عربة التسوق",
+    "account":"الحساب",
+    "wishlist":"الأماني",
+
+    "title_intro_one": "تطبيق التجارة الإلكترونية",
+    "intro_one": "الحياة صعبة بما فيه الكفاية بالفعل. دعونا نجعلها أسهل قليلاً.",
+    "title_intro_two": "اختر البند",
+    "intro_two": "مكان مثير لمتجر الأسرة بأكملها.",
+    "title_intro_three": "شراء البند",
+    "intro_three": "أعظم رحلة للتسوق عبر الإنترنت.",
+    "get_started": "البدء",
+
+    "shopnow":"الأماني",
+
+    "viewall":"مشاهدة الكل",
+    "off":"إيقاف",
+    "items":"إيقاف",
+    "remove":"إزالة",
+    "edit":"تعديل",
+    "add":"أضف",
+    "movetobag":"انتقل إلى الحقيبة",
+    "ok":"حسنا",
+    "yes":"نعم",
+    "no":"لا",
+    "allcategory":"كل الفئات",
+    "login":"تسجيل الدخول",
+    "signin": "تسجيل الدخول",
+    "signout":"خروج",
+    "myorders":"طلباتي",
+    "myaddresses":"عناويني",
+    "choosecurrency":"اختر العملة",
+    "chooselanguage":"اختر اللغة",
+    "download":"تحميل",
+    "mycoupons":"القسائم الخاصة بي",
+    "coupons":"كوبونات",
+    "mypoints":"نقاطي",
+    "accountsettings":"إعدادت الحساب",
+    "notification":"تنبيه",
+    "notifications":"إشعارات",
+    "productprice":"سعر المنتج",
+    "otherproductsvendor":"منتجات أخرى من هذا البائع",
+
+    "nonotificationyet":"لا يوجد إشعار حتى الآن",
+    "removeall":"حذف الكل",
+    "removeallmessage":"هل أنت متأكد من أنك تريد إزالة جميع الإشعارات؟",
+
+    "ratetheapp":"قيم التطبيق",
+    "clearhistory":"تاريخ واضح",
+
+    "clear":"واضح",
+
+    "expire":"تنقضي : ",
+    "remaining":"المتبقي : ",
+
+    "recentlyviewedproduct":"منتج تم عرضه مؤخرًا",
+
+    "clearhistoryalert":"يؤدي هذا إلى حذف سجل التصفح والبحث بشكل دائم من هذا الجهاز.",
+
+    "setting":"ضبط",
+    "notificationpermission":"تم رفض إذن الإعلام. الرجاء السماح من الإعدادات.",
+
+
+    "signoutalert":"هل تريد حقًا تسجيل الخروج من حسابك؟",
+
+    "camera":"الة تصوير",
+    "gallery":"صالة عرض",
+
+    "nopointsearned":"لا نقاط مكتسبة",
+    "purchaseproductearnpoints":"قم بشراء المنتج واكسب النقاط.",
+
+    "event":"حدث",
+    "date":"تاريخ",
+    "points":"نقاط",
+
+    "browsesomeotheritem":"تصفح بعض العناصر الأخرى",
+    "noanyproductavailable":"لا يوجد أي منتج متاح",
+
+
+    "email":"البريد الإلكتروني",
+    "password":"كلمه السر",
+    "oldpassword":"كلمة المرور القديمة",
+    "newpassword":"كلمة مرور جديدة",
+    "retypepassword":"أعد إدخال كلمة السر",
+    "forgotpassword":"هل نسيت كلمة المرور؟",
+    "signup":"سجل",
+    "or":"أو",
+    "selectcountry":"اختر دولة",
+    "close":"قريب",
+    "endofthesale":"نهاية البيع",
+
+    "donthaveaccount":"ليس لديك حساب؟ أفتح حساب الأن",
+    "signupnow":"أفتح حساب الأن",
+
+    "alreadyhaveaccount":"هل لديك حساب؟ قم بتسجيل دخولك الآن",
+    "signinnow":"قم بتسجيل دخولك الآن",
+
+    "enteremail":"أدخل عنوان البريد الالكتروني",
+    "entervalidemail":"أدخل عنوان بريد إلكتروني صالح",
+    "enterpassword":"أدخل كلمة المرور",
+    "entercontactno":"أدخل رقم الاتصال",
+
+    "confirmpasswordmatch":"كلمة المرور وتأكيد كلمة المرور غير متطابقين",
+
+    "entercurrentpassword":"أدخل كلمة المرور الحالية",
+    "passwordnotcorrect":"عنوان بريدك الإلكتروني أو كلمة المرور غير صحيحة",
+    "enternewpassword":"أدخل كلمة المرور الجديدة",
+
+    "passwordchangedsuccessfully":"تم تغيير الرقم السري بنجاح",
+
+    "provideemailtofacebook":"تقديم معرف البريد الإلكتروني إلى حساب الفيسبوك الخاص بك",
+
+    "enterusername":"ادخل اسم المستخدم",
+
+
+    "nocurrencyfound": "لم يتم العثور على عملة",
+    "nolanguagefound": "لا توجد لغات",
+
+    "emailid":"عنوان الايميل",
+    "username":"اسم المستخدم",
+    "confirmpassword":"تأكيد كلمة المرور",
+
+    "addaddress":"أضف عنوان جديد",
+    "pleaseaddaddress":"الرجاء إضافة العنوان",
+
+
+    "billingaddress":"عنوان وصول الفواتير",
+    "shippingaddress":"عنوان الشحن",
+
+    "addbillingaddress":"أضف عنوان الفواتير",
+    "addshippingaddress":"أضف عنوان الشحن",
+
+    "removeaddresss":"هل أنت متأكد من أنك تريد إزالة العنوان؟",
+
+    "name":"اسم",
+    "firstname":"الاسم الاول",
+    "lastname":"الكنية",
+    "pincode":"الرمز السري",
+    "address1":"العنوان 1",
+    "address2":"العنوان 2",
+    "citytown":"المدينة / البلدة",
+    "state":"حالة",
+
+    "company":"شركة",
+    "phonenumber":"رقم الهاتف",
+
+    "save":"حفظ",
+    "cancel":"إلغاء",
+    "scratchherecode":"اخدش هنا لتحصل على كود",
+    "scratchherecouponcode":"امسح هنا للحصول على رمز القسيمة.",
+
+    "couponcode":"رمز الكوبون",
+    "couponcodecopied":"تم نسخ رمز القسيمة إلى الحافظة الخاصة بك",
+    "norewardsyet":"لا مكافآت بعد .. !!",
+
+    "aboutus":"معلومات عنا",
+    "version":"الإصدار",
+    "termscondition":"الشروط والأحكام",
+    "privacypolicy":"سياسة خاصة",
+    "followus":"تابعنا",
+    "moreaboutus":"المزيد عنا",
+
+
+    "accountsetting":"إعدادات الحساب",
+    "dateofbirth":"تاريخ الولادة",
+    "gender":"جنس",
+    "mobilenumber":"رقم الهاتف المحمول",
+    "changepassword":"تغيير كلمة المرور",
+    "deactivateaccount":"حذف الحساب",
+    "confirmdeactivation":"تأكيد الحذف",
+
+    "informationupdatedsuccess":"تم تحديث المعلومات بنجاح",
+
+    "deactivatedsuccess":"تم إلغاء تنشيط حسابك بنجاح",
+    "confirmdeactivate":"هل أنت متأكد من إلغاء تنشيط ملف التعريف الخاص بك؟ \n إذا كانت الإجابة بنعم ، فعندئذٍ لإعادة تنشيط ملف التعريف الخاص بك ، يجب عليك الاتصال بالمسؤول.",
+
+    "contactus":"اتصل بنا",
+    "contactnumber":"رقم الاتصال",
+    "subject":"موضوع",
+    "message":"رسالة",
+    "send":"إرسال",
+
+    "entername":"أدخل أسمك",
+    "entersubject":"أدخل الموضوع",
+    "entermessage":"الرجاء إدخال الرسالة",
+    "messagesent":"تم الارسال",
+
+    "orderid":"رقم التعريف الخاص بالطلب:",
+    "totalamount":"المبلغ الإجمالي:",
+    "quantity":"كمية:",
+    "details":"تفاصيل",
+    "retry":"أعد المحاولة",
+
+    "orderdetails":"تفاصيل الطلب",
+    "cancelorder":"الغاء الطلب",
+
+    "noorderyet":"لا يوجد طلب حتى الان",
+    "noorderdescription":"ببساطة تصفح ، أنشئ قائمة أمنيات أو قم بالشراء",
+    "trackingnumberis":"رقم التتبع هو",
+
+    "deliveredsoon":"delivered soon",
+    "orderpendingstate":"الطلب في حالة انتظار",
+    "orderunderprocessing":"الطلب قيد المعالجة",
+    "orderonhold":"الطلب معلق",
+    "delivered":"تم التوصيل",
+    "deliveredon":"تم التسليم",
+    "ordercancelled":"تم إلغاء الطلب",
+
+    "thankyou":"شكرا",
+    "orderplacedsuccess":"تم وضع طلبك بنجاح.",
+    "notifyinfewmoments":"سوف يخطر في لحظات قليلة.",
+
+
+    "refundedorder":"تم رد المبلغ المدفوع لهذا الطلب",
+    "orderfailed":"الطلب فاشل",
+    "deliversoon":"سيتم توصيل طلبك قريبًا",
+
+    "shoppingbag":"كيس التسوق",
+    "continueshopping":"مواصلة التسوق",
+
+    "addtocartmessage":"ببساطة تصفح وإضافة عنصر إلى عربة التسوق",
+    "addtowishlistmessage":"ببساطة تصفح وإضافة عنصر إلى قائمة الرغبات.",
+
+    "itemalreadyincart":"العنصر موجود بالفعل في سلة التسوق",
+    "cartisempty":"البطاقه خاليه",
+    "noproductfound":"لم يتم العثور على منتج",
+    "delete":"حذف",
+    "continuetocheckout":"الاستمرار في الخروج",
+
+
+
+    "order":"طلب",
+    "wasplaced":"تم وضعه على",
+    "andcurrently":"وحاليا",
+
+    "ordercancelledsuccess":"تم إلغاء الطلب بنجاح.",
+
+    "searchlistempty":"قائمة البحث فارغة",
+    "browseourstore":"تصفح متجرنا وألق نظرة على العناصر الأخرى للشراء.",
+
+    "searchhere":"ابحث هنا...",
+
+    "resetyourworld":"أعد ضبط عالمك",
+    "resetpassworddescription":"غالبًا ما يتم نسيان أشياء كلمة المرور هذه. أدخل عنوان بريدك الإلكتروني أدناه وانقر على زر 'طلب إعادة تعيين كلمة المرور'. سوف نتصل بك بطريقة لطيفة!",
+    "requestpasswordreset":"اعادة تعيين كلمة المرور طلب",
+
+
+    "resetyourpassword":"اعد ضبط كلمه السر",
+    "enterpin":"أدخل رقم التعريف الشخصي الذي أرسلناه لك في عنوان بريدك الإلكتروني المسجل.",
+    "setnewpassword":"تعيين كلمة مرور جديدة",
+
+    "pinincorrect":"رقم التعريف الشخصي الذي تم إدخاله غير صحيح",
+    "enterconfirmpassword":"أدخل تأكيد كلمة المرور الخاصة بك",
+    "enterenewpassword":"أدخل كلمة المرور الجديدة",
+    "passwordnotmatch":"كلمة المرور وتأكيد كلمة المرور غير متطابقين",
+    "otpsentagain":"يتم إرسال otp مرة أخرى على",
+
+    "pin":"دبوس",
+
+    "verificationcode":"شيفرة التأكيد",
+    "verificationcodedescription":"يتم إرسال رمز التحقق إلى رقم الهاتف المحمول. الرجاء إدخال رمز التحقق.",
+    "validateotp":"التحقق من صحة otp",
+    "resendotp":"إعادة إرسال otp",
+    "enterverificationcode":"أدخل رمز التحقق",
+
+
+
+    "passwordupdatesuccess":"تم تحديث كلمة المرور الخاصة بك بنجاح",
+
+
+
+    "youhavepoints":"لديك نقاط",
+
+
+    "subtotal":"المجموع الفرعي",
+    "shipping":"الشحن",
+    "amountpayable":"المبلغ المستحق",
+    "paymentmethod":"طريقة الدفع او السداد:",
+    "paymentdetails":"بيانات الدفع",
+    "sortby":"صنف حسب",
+    "filter":"منقي",
+    "color" : "اللون",
+    "size":"بحجم",
+    "pricerange":"نطاق السعر",
+    "selectall":"اختر الكل",
+    "category":"الفئة",
+    "brand":"الماركة",
+    "rating":"تقييم",
+    "clearfilter":"مرشح واضح",
+    "availability":"التوفر",
+    "outofstock":"إنتهى من المخزن",
+    "instock":"في المخزن",
+
+    "newestfirst":"الأحدث أولاً",
+    "popularity":"شعبية",
+    "pricelowtohigh":"السعر من الارخص للاعلى",
+    "pricehightolow":"السعر الاعلى الى الادنى",
+
+    "buynow":"اشتري الآن",
+    "addtocart":"أضف إلى السلة",
+    "info":"معلومات",
+    "deliveryoptions":"خيارات التوصيل",
+    "enteryourpincode":"أدخل رمز pin الخاص بك",
+    "check":"التحقق من",
+    "soldby":"تم بيعها من قبل",
+    "sellerinformation":"معلومات البائع",
+    "contactseller":"تواصل مع البائع",
+    "viewstore":"عرض المتجر",
+    "quickoverview":"لمحة سريعة",
+    "productdetails":"تفاصيل المنتج",
+    "more":"أكثر...",
+    "ratingsnreviews":"التقييمات والمراجعات",
+    "ratings":"التقييمات",
+    "reviews":"المراجعات",
+    "review":"مراجعة",
+    "ratenwritereview":"تقييم وكتابة مراجعة",
+    "viewallreviews":"عرض جميع المراجعات",
+
+    "rateproduct":"قيم المنتج",
+    "comment":"تعليق",
+    "submit":"إرسال",
+    "image":"صورة",
+    "quick":"بسرعة",
+
+    "removefromcart":"هل أنت متأكد أنك تريد إزالة من سلة التسوق؟",
+    "removefromwishlist":"هل أنت متأكد أنك تريد إزالة من قائمة الرغبات؟",
+
+    "itemaddedwishlist":"تم إضافة العنصر إلى قائمة الامنيات الخاصة بك.",
+    "itemremovedwishlist":"تمت إزالة العنصر من قائمة الأمنيات.",
+
+    "itemaddedcart":"تمت إضافة العنصر لسلة التسوق بنجاح",
+    "combinationnotexists":"هذه المجموعة غير موجودة. اختر متغيرًا آخر.",
+
+
+    "gotocart":"اذهب إلى السلة",
+    "relatedproducts":"منتجات ذات صله",
+
+    "giverating":"يرجى إعطاء تقييماتك",
+
+    "availableat":"متواجد في",
+    "available":"متاح",
+    "cashondelivery":"cash on delivery",
+    "notavailable":"not available",
+    "deliverydatahelptext":"غير متوفر",
+    "pincodenotblank":"يجب ألا يكون الرمز السري فارغًا.",
+    "entervalidpincode":"الرجاء إدخال رمز سري صالح",
+
+    "invalidcontactno":"رقم الاتصال غير صحيح",
+    "whatsappnotinstalled":"whatsapp غير مثبت على جهازك.",
+
+    "ratingurlnotavailable":"لم يتم تعيين رابط التصنيف",
+    "geofencemessage":"لقد دخلت في منطقة متجرنا",
+    "websitenotvalid":"الموقع غير صالح",
+
+
+    "walletbalance":"رصيد المحفظة",
+    "wallet":"محفظة",
+    "wallet_transaction_history":"سجل معاملات المحفظة",
+
+    "orderplacedfailure" : "تم إلغاء الطلب",
+    "orderplacedfailuresubmessage" : "للأسف ، لا يمكن معالجة طلبك لأن البنك / التاجر الأصلي قد رفض معاملتك.",
+
+    "technicalissue":"هناك بعض المشاكل الفنية. يرجى المحاولة بعد مرور بعض الوقت.",
+    "noratingurl" : "لم يتم تعيين عنوان url الخاص بالتقييم",
+
+    "enterfirstname":"الرجاء إدخال الاسم الأول",
+    "enterlastname":"الرجاء إدخال الاسم الأخير",
+    "enterpincode":"الرجاء إدخال الرمز السري",
+    "enteraddress1":"الرجاء إدخال العنوان 1",
+    "enteraddress2":"الرجاء إدخال العنوان 2",
+    "enterphonenumber":"الرجاء إدخال رقم الهاتف",
+    "entercompany":"الرجاء إدخال اسم الشركة",
+
+
+    "logoutnotexistuser" : "تم حذف حسابك من قبل المسؤول. يجب عليك تسجيل الخروج."
+}
+

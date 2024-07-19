@@ -1,0 +1,396 @@
+{
+
+  "skip":"пропускать",
+  "next":"следующий",
+  "done":"сделанный",
+  "allrigtsreserved" :"© ciyashop 2023 | все права защищены",
+
+
+  "search":"поиск",
+  "cart":"корзина",
+  "account":"счет",
+  "wishlist":"список желаний",
+  "signin": "войти",
+
+  "title_intro_one": "Приложение электронной коммерции",
+  "intro_one": "Жизнь и так достаточно тяжела. Давайте сделаем это немного проще.",
+  "title_intro_two": "Выберите элемент",
+  "intro_two": "Интересный магазин для всей семьи.",
+  "title_intro_three": "Купить вещь",
+  "intro_three": "Величайшее путешествие интернет-магазина.",
+  "get_started": "Начать",
+
+  "shopnow":"купить сейчас",
+  "viewall":"посмотреть все",
+  "off":"выкл.",
+  "items":"предметы",
+  "remove":"удалять",
+  "edit":"редактировать",
+  "add":"добавить",
+  "movetobag":"переместить в сумку",
+  "ok":"ok",
+  "yes":"да",
+  "no":"нет",
+  "allcategory":"все категории",
+
+
+  "login":"авторизоваться",
+  "signout":"выход",
+  "myorders":"мои заказы",
+  "myaddresses":"мои адреса",
+  "choosecurrency":"выберите валюту",
+  "chooselanguage":"выберите язык",
+  "download":"скачать",
+  "mycoupons":"мои купоны",
+  "coupons":"купоны",
+  "mypoints":"мои очки",
+  "aboutus":"насчет нас",
+  "accountsettings":"настройки учетной записи",
+  "notification":"уведомление",
+  "notifications":"уведомления",
+
+  "productprice":"цена продукта",
+  "otherproductsvendor":"другие товары этого продавца",
+
+  "nonotificationyet":"уведомлений пока нет",
+  "removeall":"убрать все",
+  "removeallmessage":"вы действительно хотите удалить все уведомления?",
+
+  "contactus":"свяжитесь с нами",
+  "ratetheapp":"оцените приложение",
+  "clearhistory":"чистая история",
+
+  "clear":"очистить",
+
+  "expire":"срок действия : ",
+  "remaining":"осталось : ",
+
+  "recentlyviewedproduct":"недавно просмотренный продукт",
+
+  "clearhistoryalert":"это навсегда удалит ваш просмотр и историю поиска с этого устройства.",
+
+
+  "setting":"настройка",
+  "notificationpermission":"в разрешении на уведомление отказано. пожалуйста, разрешите из настроек.",
+
+
+  "signoutalert":"вы действительно хотите выйти из своей учетной записи?",
+
+  "camera":"камера",
+  "gallery":"галерея",
+
+  "nopointsearned":"нет начисленных баллов",
+  "purchaseproductearnpoints":"покупайте продукт и зарабатывайте баллы.",
+
+  "event":"событие",
+  "date":"дата",
+  "points":"точки",
+
+  "browsesomeotheritem":"просмотрите другой товар",
+  "noanyproductavailable":"нет доступных продуктов",
+
+
+
+  "email":"электронное письмо",
+  "password":"пароль",
+  "oldpassword":"прежний пароль",
+  "newpassword":"новый пароль",
+  "retypepassword":"повторите ввод пароля",
+  "forgotpassword":"забыл пароль?",
+  "signup":"подписаться",
+  "or":"или",
+  "selectcountry":"выберите страну",
+  "close":"близко",
+
+  "endofthesale":"конец распродажи",
+
+  "donthaveaccount":"нет учетной записи? зарегистрироваться сейчас",
+  "signupnow":"зарегистрироваться сейчас",
+
+  "alreadyhaveaccount":"уже есть аккаунт? войти сейчас",
+  "signinnow":"войти сейчас",
+
+  "enteremail":"введите адрес электронной почты",
+  "entervalidemail":"введите действующий адрес электронной почты",
+  "enterpassword":"введите пароль",
+  "enterconfirmpassword":"введите подтвердите пароль",
+  "entercontactno":"введите контактный номер",
+
+  "confirmpasswordmatch":"пароль и подтверждение пароля не совпадают",
+
+  "entercurrentpassword":"введи свой текущий пароль",
+  "passwordnotcorrect":"ваш адрес электронной почты или пароль неверны",
+  "enternewpassword":"введите ваш новый пароль",
+
+  "passwordchangedsuccessfully":"пароль успешно изменен",
+
+  "provideemailtofacebook":"укажите идентификатор электронной почты для своей учетной записи facebook",
+
+  "enterusername":"введите имя пользователя",
+
+  "nocurrencyfound": "валюта не найдена",
+  "nolanguagefound": "не найдено ни одного языка",
+
+
+  "emailid":"электронный идентификатор",
+  "username":"имя пользователя",
+  "confirmpassword":"подтвердить пароль",
+
+  "addaddress":"добавьте новый адрес",
+  "pleaseaddaddress":"пожалуйста, добавьте адрес",
+
+
+  "billingaddress":"платежный адрес",
+  "shippingaddress":"адрес доставки",
+
+  "addbillingaddress":"добавить платежный адрес",
+  "addshippingaddress":"добавить адрес доставки",
+
+  "removeaddresss":"вы действительно хотите удалить адрес?",
+
+  "name":"название",
+  "firstname":"имя",
+  "lastname":"фамилия",
+  "pincode":"пин-код",
+  "address1":"адрес 1",
+  "address2":"адрес 2",
+  "citytown":"город / город",
+  "state":"состояние",
+  "company":"компания",
+  "phonenumber":"телефонный номер",
+
+  "save":"сохранить",
+  "cancel":"отмена",
+
+  "scratchherecode":"поцарапайте здесь, чтобы получить код",
+  "scratchherecouponcode":"поцарапайте здесь, чтобы получить код купона.",
+  "couponcode":"код купона",
+
+  "couponcodecopied":"код купона скопирован в буфер обмена",
+
+  "norewardsyet":"наград пока нет .. !!",
+
+
+  "version":"версия",
+  "termscondition":"условия и положения",
+  "privacypolicy":"политика конфиденциальности",
+  "followus":"подписывайтесь на нас",
+  "moreaboutus":"больше о нас",
+
+
+  "accountsetting":"настройки аккаунта",
+  "dateofbirth":"дата рождения",
+  "gender":"пол",
+  "mobilenumber":"мобильный номер",
+  "changepassword":"сменить пароль",
+  "deactivateaccount":"удалить аккаунт",
+  "confirmdeactivation":"подтвердить удаление",
+
+
+  "informationupdatedsuccess":"информация обновлена ​​успешно",
+
+  "deactivatedsuccess":"ваша учетная запись успешно деактивирована",
+  "confirmdeactivate":"вы уверены, что хотите деактивировать свой профиль? \n если да, то для повторной активации вашего профиля вам необходимо связаться с администратором.",
+
+
+  "contactnumber":"контактный телефон",
+  "subject":"предмет",
+  "message":"сообщение",
+  "send":"послать",
+
+  "entername":"введите ваше имя",
+  "entersubject":"введите тему",
+  "entermessage":"пожалуйста, введите сообщение",
+  "messagesent":"сообщение отправлено",
+
+  "orderid":"номер заказа:",
+  "totalamount":"итого::",
+  "quantity":"количество:",
+  "details":"детали",
+  "retry":"повторить",
+
+  "orderdetails":"информация для заказа",
+  "cancelorder":"отменить заказ",
+
+
+  "noorderyet":"еще нет заказа",
+  "noorderdescription":"просто просмотрите, создайте список желаний или сделайте покупку.",
+  "trackingnumberis":"номер для отслеживания",
+
+  "deliveredsoon":"скоро доставлено",
+  "orderpendingstate":"ордер находится в состоянии ожидания",
+  "orderunderprocessing":"заказ обрабатывается",
+  "orderonhold":"заказ приостановлен",
+  "delivered":"доставлен",
+  "deliveredon":"доставлено",
+  "ordercancelled":"заказ отменен",
+  "refundedorder":"вам вернут деньги за этот заказ",
+  "orderfailed":"заказ не выполнен",
+  "deliversoon":"ваш заказ скоро будет доставлен",
+
+
+  "order":"порядок",
+  "wasplaced":"был размещен на",
+  "andcurrently":"и в настоящее время",
+
+  "ordercancelledsuccess":"заказ успешно отменен.",
+
+  "thankyou":"спасибо",
+  "orderplacedsuccess":"ваш заказ успешно размещен.",
+  "notifyinfewmoments":"вы уведомите через несколько мгновений.",
+
+
+  "shoppingbag":"сумка для покупок",
+  "continueshopping":"продолжить покупки",
+
+  "addtocartmessage":"просто просмотрите и добавьте товар в корзину.",
+  "addtowishlistmessage":"просто просмотрите и добавьте элемент в список желаний.",
+
+  "itemalreadyincart":"товар уже в корзине",
+  "cartisempty":"корзина пуста",
+  "noproductfound":"товар не найден",
+  "delete":"удалять",
+  "continuetocheckout":"продолжить оформление заказа",
+
+
+  "searchlistempty":"список поиска пуст",
+  "browseourstore":"просмотрите наш магазин и обратите внимание на другие товары, которые можно купить.",
+
+  "searchhere":"поищи здесь...",
+
+  "resetyourworld":"сбросить свой мир",
+  "resetpassworddescription":"часто забывают, что пароль вещи. введите ниже свой адрес электронной почты и нажмите кнопку «запросить сброс пароля». мы свяжемся с вами в ближайшее время!",
+  "requestpasswordreset":"запросить сброс пароля",
+
+  "resetyourpassword":"reset your password",
+  "enterpin":"введите pin-код, который мы отправили вам, на ваш зарегистрированный адрес электронной почты.",
+  "setnewpassword":"установить новый пароль",
+
+  "pinincorrect":"введен неправильный pin-код",
+  "enterenewpassword":"введите ваш новый пароль",
+  "passwordnotmatch":"пароль и подтверждение пароля не совпадают",
+
+  "pin":"штырь",
+
+
+  "verificationcode":"проверочный код",
+  "verificationcodedescription":"код подтверждения отправляется на номер мобильного телефона. пожалуйста, введите код подтверждения.",
+  "validateotp":"проверить otp",
+  "resendotp":"отправить otp повторно",
+  "enterverificationcode":"введите код подтверждения",
+
+  "otpsentagain":"otp отправляется снова",
+
+
+  "passwordupdatesuccess":"ваш пароль успешно обновлен",
+
+  "youhavepoints":"у вас есть очки",
+
+  "subtotal":"промежуточный итог",
+  "shipping":"перевозка",
+  "amountpayable":"подлежащая уплате сумма",
+
+  "paymentmethod":"способ оплаты:",
+  "paymentdetails":"детали оплаты",
+  "sortby":"сортировать по",
+  "filter":"фильтр",
+  "color" : "цвет",
+  "size":"размер",
+  "pricerange":"ценовой диапазон",
+  "selectall":"выбрать все",
+  "category":"категория",
+  "brand":"марка",
+  "rating":"рейтинг",
+  "clearfilter":"очистить фильтр",
+  "availability":"доступность",
+  "outofstock":"распродано",
+  "instock":"в наличии",
+
+  "newestfirst":"новички вперед",
+  "popularity":"популярность",
+  "pricelowtohigh":"цена - по возрастанию",
+  "pricehightolow":"цена - по убыванию",
+
+  "buynow":"купить сейчас",
+  "addtocart":"добавить в корзину",
+  "info":"информация",
+  "deliveryoptions":"варианты доставки",
+  "enteryourpincode":"введите свой пин-код",
+  "check":"проверьте",
+  "soldby":"продан",
+  "sellerinformation":"seller information",
+  "contactseller":"связаться с продавцом",
+  "viewstore":"просмотреть магазин",
+  "quickoverview":"краткая информация",
+  "productdetails":"информация о продукте",
+  "more":"больше...",
+  "ratingsnreviews":"рейтинги и обзоры",
+  "ratings":"рейтинги",
+  "reviews":"отзывы",
+  "review":"обзор",
+  "ratenwritereview":"оценить и написать отзыв",
+  "viewallreviews":"просмотреть все отзывы",
+
+  "rateproduct":"оценить продукт",
+  "comment":"комментарий",
+  "submit":"представить",
+  "image":"образ",
+  "quick":"быстрый",
+
+  "removefromcart":"вы действительно хотите удалить из корзины?",
+  "removefromwishlist":"вы уверены, что хотите удалить из списка желаний?",
+
+  "itemaddedwishlist":"товар добавлен в ваш список желаний.",
+  "itemremovedwishlist":"товар удален из вашего списка желаний.",
+
+  "itemaddedcart":"товар успешно добавлен в корзину",
+  "combinationnotexists":"такой комбинации не существует. выбери другой вариант.",
+
+
+  "gotocart":"перейти в корзину",
+
+
+  "relatedproducts":"сопутствующие товары",
+
+  "giverating":"пожалуйста, дайте свои оценки",
+
+
+  "availableat":"доступны на",
+  "available":"имеется в наличии",
+  "cashondelivery":"оплата при доставке",
+  "notavailable":"нет в наличии",
+  "deliverydatahelptext":"текст справки по дате доставки",
+  "pincodenotblank":"пин-код не должен быть пустым. t",
+  "entervalidpincode":"пожалуйста, введите действительный pin-код",
+
+
+
+  "invalidcontactno":"неверный контактный номер",
+  "whatsappnotinstalled":"whatsapp не установлен на вашем устройстве.",
+
+  "ratingurlnotavailable":"ссылка на рейтинг не установлена",
+  "geofencemessage":"вы вошли в регион нашего магазина",
+  "websitenotvalid":"сайт недействителен",
+
+
+  "walletbalance":"баланс кошелька",
+  "wallet":"кошелек",
+  "wallet_transaction_history":"история транзакций кошелька",
+
+  "orderplacedfailure" : "заказ отменен",
+  "orderplacedfailuresubmessage" : "к сожалению, ваш заказ не может быть обработан, поскольку банк-отправитель / продавец отклонил вашу транзакцию.",
+
+  "technicalissue":"возникла техническая проблема. пожалуйста, попробуйте через некоторое время.",
+  "noratingurl" : "url-адрес рейтинга не задан",
+
+  "enterfirstname":"пожалуйста, введите имя",
+  "enterlastname":"пожалуйста, введите фамилию",
+  "enterpincode":"пожалуйста, введите пин-код",
+  "enteraddress1":"пожалуйста, введите адрес1",
+  "enteraddress2":"пожалуйста, введите адрес2",
+  "enterphonenumber":"пожалуйста, введите номер телефона",
+  "entercompany":"пожалуйста, введите компанию",
+
+  "logoutnotexistuser" : "ваш аккаунт удален администратором. вы должны выйти из системы."
+
+}

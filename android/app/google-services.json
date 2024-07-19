@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "85099315518",
+    "project_id": "ciyashop-flutter",
+    "storage_bucket": "ciyashop-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85099315518:android:d8968b19cb6483ebb86c6f",
+        "android_client_info": {
+          "package_name": "com.example.ciyashop_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85099315518-2h2t791e3fglektl24g2sse79bpm0pdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjSBXjZtWQs5WP-L8HZYlN8vyKaKyWTqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85099315518-2h2t791e3fglektl24g2sse79bpm0pdf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "85099315518-3nravbn1bub772ueg6tik6l3mcmnvsik.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ciyashopFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
