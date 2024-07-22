@@ -4,6 +4,8 @@ import 'package:ciyashopflutter/repository/api_helper/api_services.dart';
 import 'package:ciyashopflutter/repository/api_helper/api_status.dart';
 import 'package:ciyashopflutter/utils/constant.dart';
 
+import '../utils/Apis.dart';
+
 
 abstract class SplashRepository {
   getHomeLayout();
@@ -14,8 +16,8 @@ class SplashRepositoryImpl extends SplashRepository {
   @override
   getHomeLayout() async {
     var params = {
-      APIConstant.instance.appVer: version,
-      APIConstant.instance.purchaseCode: purchasekey,
+      APIConstant.instance.appVer: Apis.version,
+      APIConstant.instance.purchaseCode: Apis.purchasekey,
     };
     var response = await ApiServices.instance.postAPICall(
       param: params,

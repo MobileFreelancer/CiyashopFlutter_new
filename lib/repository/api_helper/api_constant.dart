@@ -1,3 +1,4 @@
+import 'package:ciyashopflutter/utils/Apis.dart';
 import 'package:ciyashopflutter/utils/constant.dart';
 
 class APIConstant {
@@ -10,13 +11,13 @@ class APIConstant {
   static APIConstant get instance => _instance;
   
   //API-END POINT
-  final String homeLayoutApi = "${MAIN_URL}home_layout";
-  final String addNotificationApi = "${MAIN_URL}add_notifications";
-  final String getProductApi = "${MAIN_URL}products";
-  final String signInApi = "${MAIN_URL}login";
-  final String socialSignInApi = "${MAIN_URL}social_login";
-  final String forgotPasswordApi = "${MAIN_URL}forgot_password";
-  final String updatePasswordApi = "${MAIN_URL}update_password";
+  final String homeLayoutApi = "${Apis.MAIN_URL}home_layout";
+  final String addNotificationApi = "${Apis.MAIN_URL}add_notifications";
+  final String getProductApi = "${Apis.MAIN_URL}products";
+  final String signInApi = "${Apis.MAIN_URL}login";
+  final String socialSignInApi = "${Apis.MAIN_URL}social_login";
+  final String forgotPasswordApi = "${Apis.MAIN_URL}forgot_password";
+  final String updatePasswordApi = "${Apis.MAIN_URL}update_password";
 
   //API_REQUEST PARAM
   final String appVer = "app-ver";

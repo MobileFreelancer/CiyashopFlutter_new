@@ -7,6 +7,7 @@ import 'package:ciyashopflutter/utils/utils.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 
 class SignInController extends GetxController {
@@ -39,9 +40,9 @@ class SignInController extends GetxController {
   userLogin(context) async {
     FocusScope.of(context).unfocus();
     if (emailController.text.isEmpty) {
-      showToast(Msg: AppLocalizations.of(context)!.enteremail);
+      showShortToast(Msg: AppLocalizations.of(context)!.enteremail);
     } else if (passwordController.value.text.isEmpty) {
-      showToast(Msg: AppLocalizations.of(context)!.enterpassword);
+      showShortToast(Msg: AppLocalizations.of(context)!.enterpassword);
     } else {
       showLoader();
       var result =
@@ -54,7 +55,7 @@ class SignInController extends GetxController {
           Get.offNamed(RoutesName.mainScreen);
         }
       } else if (result is Failure) {
-        showToast(Msg: result.errorResponse.toString());
+        showShortToast(Msg: result.errorResponse.toString());
       }
     }
   }

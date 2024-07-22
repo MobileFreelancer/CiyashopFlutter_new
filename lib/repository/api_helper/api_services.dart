@@ -5,6 +5,7 @@ import 'package:ciyashopflutter/utils/constant.dart';
 import 'package:dio/dio.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
+import '../../utils/Apis.dart';
 import 'api_status.dart';
 
 enum ParamType {
@@ -46,7 +47,7 @@ class ApiServices {
         queryParameters: param,
         options: Options(
           headers: {
-            HttpHeaders.authorizationHeader: 'Basic ${base64Encode(utf8.encode("${AP_USERNAME}:${AP_PASSWORD}"))}',
+            HttpHeaders.authorizationHeader: 'Basic ${base64Encode(utf8.encode("${Apis.AP_USERNAME}:${Apis.AP_PASSWORD}"))}',
           },
         ),
       );
@@ -67,7 +68,7 @@ class ApiServices {
         options: Options(
           responseType: ResponseType.json,
           headers: {
-            HttpHeaders.authorizationHeader: 'Basic ${base64Encode(utf8.encode("${AP_USERNAME}:${AP_PASSWORD}"))}',
+            HttpHeaders.authorizationHeader: 'Basic ${base64Encode(utf8.encode("${Apis.AP_USERNAME}:${Apis.AP_PASSWORD}"))}',
             HttpHeaders.contentTypeHeader:
                 paramType == ParamType.raw ? "application/json" : "application/x-www-form-urlencoded",
           },

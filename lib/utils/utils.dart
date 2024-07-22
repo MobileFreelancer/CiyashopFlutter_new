@@ -8,17 +8,31 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:scratcher/scratcher.dart';
 
-void showToast({required String Msg}) {
+
+
+void showLongToast({required String Msg}) {
+  Fluttertoast.showToast(
+    msg: Msg,
+    toastLength: Toast.LENGTH_LONG,
+    gravity: ToastGravity.BOTTOM_RIGHT,
+    timeInSecForIosWeb: 2,
+    backgroundColor: ColorConstant.primaryColor,
+    textColor: Colors.white,
+    fontSize: 14.0,
+  );
+}
+void showShortToast({required String Msg}) {
   Fluttertoast.showToast(
     msg: Msg,
     toastLength: Toast.LENGTH_SHORT,
     gravity: ToastGravity.BOTTOM_RIGHT,
     timeInSecForIosWeb: 2,
-    backgroundColor: ColorConstant.lightColor,
-    textColor: ColorConstant.textTitle,
+    backgroundColor: ColorConstant.primaryColor,
+    textColor: Colors.white,
     fontSize: 14.0,
   );
 }
+
 
 showLoader() {
   FocusManager.instance.primaryFocus?.unfocus();
