@@ -9,6 +9,8 @@ import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:ciyashopflutter/utils/utils.dart';
 import 'package:get/get.dart';
 
+import '../utils/config.dart';
+
 class SplashController extends GetxController {
   final SplashRepositoryImpl _splashRepository = SplashRepositoryImpl();
   var isLoading = false.obs;
@@ -23,17 +25,18 @@ class SplashController extends GetxController {
   getHomeLayout() async {
     var result = await _splashRepository.getHomeLayout();
     if (result is HomeLayoutModel) {
-      homeLayout = result.homeLayout ?? "";
-      isGuestCheckoutActive = result.isGuestCheckoutActive ?? false;
-      isLogin = result.isLogin ?? false;
-      isSlider = result.isSlider ?? false;
-      isRtl = result.isRtl ?? false;
-      siteLanguage = result.siteLanguage ?? "en-US";
-      walletActive = result.isTerawalletActive ?? false;
-      isUserExists = result.isUserExists ?? "not_provided";
+
+      AppPreference.instance.setGuestCheckout(result.isGuestCheckoutActive ?? false);
+      AppPreference.instance.setIsLogin(result.isLogin ?? false);
+      AppPreference.instance.setIsSlider(result.isSlider ?? false);
+      AppPreference.instance.setIsRtl(result.isRtl ?? false);
+      AppPreference.instance.setSiteLanguage(result.siteLanguage ?? "en");
+      AppPreference.instance.setWalletActive(result.isTerawalletActive ?? false);
+      AppPreference.instance.setIsUserExists(result.isUserExists ?? "false");
+
       await redirectToIntroSlider();
     } else if (result is Failure) {
-      showToast(Msg: result.errorResponse.toString());
+      showShortToast(Msg: result.errorResponse.toString());
     }
   }
 
@@ -42,10 +45,10 @@ class SplashController extends GetxController {
     isLoading.value = false;
     Timer(
       const Duration(seconds: 3),
-      () {
+      () async {
         Get.offNamed(
-          !isSlider
-              ? isLogin
+          !Config.isSliderShow
+              ? await AppPreference.instance.getIsLogin()
                   ? RoutesName.signInScreen
                   : RoutesName.mainScreen
               : RoutesName.introSliderScreen,

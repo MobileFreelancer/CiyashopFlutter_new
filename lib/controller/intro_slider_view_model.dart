@@ -1,4 +1,5 @@
 import 'package:ciyashopflutter/generated/assets.dart';
+import 'package:ciyashopflutter/utils/config.dart';
 import 'package:ciyashopflutter/utils/app_preferences.dart';
 import 'package:ciyashopflutter/utils/constant.dart';
 import 'package:ciyashopflutter/utils/routers.dart';
@@ -54,7 +55,7 @@ class IntroSliderController extends GetxController {
 
   onGetStarted(BuildContext context) async {
     await AppPreference.instance.setFirstOpen(true);
-    if (isLogin) {
+    if (Config.isLoginShow) {
       Get.offNamed(RoutesName.signInScreen);
     } else {
       Get.offNamed(RoutesName.mainScreen);

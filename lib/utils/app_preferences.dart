@@ -9,12 +9,22 @@ class AppPreference {
 
   AppPreference._internal();
 
+  //Color
   final String _primaryColor = "primaryColor";
   final String _secondaryColor = "secondaryColor";
   final String _deviceToken = "deviceToken";
   final String _firstOpen = "firstOpen";
 
-  //userInfo
+  //Config
+  final String _isGuestCheckoutActive = "isGuestCheckoutActive";
+  final String _isLogin = "isLogin";
+  final String _isSlider = "isSlider";
+  final String _isRtl = "isRtl";
+  final String _siteLanguage = "siteLanguage";
+  final String _walletActive = "walletActive";
+  final String _isUserExists = "isUserExists";
+
+  //user
   final String _userId = "userId";
   final String _userName = "userName";
   final String _niceName = "niceName";
@@ -32,252 +42,133 @@ class AppPreference {
   final String _dob = "dob";
   final String _pgsUserImage = "pgsUserImage";
 
-  var prefs;
+  late Future<SharedPreferences> _prefs;
 
-  //First Open
-  setFirstOpen(bool s) async {
-    prefs = await SharedPreferences.getInstance();
-    prefs.setBool(_firstOpen, s);
+  Future<void> init() async {
+    _prefs = SharedPreferences.getInstance();
   }
 
-  getFirstOpen() async {
-    prefs = await SharedPreferences.getInstance();
-    bool value = prefs.getBool(_firstOpen) ?? false;
-    return value;
+  Future<void> _setBool(String key, bool value) async {
+    final prefs = await _prefs;
+    await prefs.setBool(key, value);
   }
 
-  //Primary Color
-  setPrimaryColor(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_primaryColor, s);
+  Future<bool> _getBool(String key, {bool defaultValue = false}) async {
+    final prefs = await _prefs;
+    return prefs.getBool(key) ?? defaultValue;
   }
 
-  getPrimaryColor() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_primaryColor) ?? "#4C7CF0";
-    return stringValue;
+  Future<void> _setString(String key, String value) async {
+    final prefs = await _prefs;
+    await prefs.setString(key, value);
   }
 
-  //secondary Color
-  setSecondaryColor(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_secondaryColor, s);
+  Future<String> _getString(String key, {String defaultValue = ""}) async {
+    final prefs = await _prefs;
+    return prefs.getString(key) ?? defaultValue;
   }
 
-  getSecondaryColor() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_secondaryColor) ?? "#FFFFFF";
-    return stringValue;
-  }
+  // First Open
+  Future<void> setFirstOpen(bool value) async => _setBool(_firstOpen, value);
+  Future<bool> getFirstOpen() async => _getBool(_firstOpen);
 
-  //user DeviceToken
-  setDeviceToken(String? s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_deviceToken, s ?? "");
-  }
+  // Primary Color
+  Future<void> setPrimaryColor(String value) async => _setString(_primaryColor, value);
+  Future<String> getPrimaryColor() async => _getString(_primaryColor, defaultValue: "#4C7CF0");
 
-  getDeviceToken() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_deviceToken) ?? "";
-    return stringValue;
-  }
+  // Secondary Color
+  Future<void> setSecondaryColor(String value) async => _setString(_secondaryColor, value);
+  Future<String> getSecondaryColor() async => _getString(_secondaryColor, defaultValue: "#FFFFFF");
 
-  //=============================================================================================
+  // Device Token
+  Future<void> setDeviceToken(String? value) async => _setString(_deviceToken, value ?? "");
+  Future<String> getDeviceToken() async => _getString(_deviceToken);
 
-  //userId
-  setUserId(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_userId, s);
-  }
+  // Configuration
+  Future<void> setGuestCheckout(bool value) async => _setBool(_isGuestCheckoutActive, value);
+  Future<bool> getGuestCheckout() async => _getBool(_isGuestCheckoutActive);
 
-  getUserId() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_userId) ?? "";
-    return stringValue;
-  }
+  Future<void> setIsLogin(bool value) async => _setBool(_isLogin, value);
+  Future<bool> getIsLogin() async => _getBool(_isLogin);
 
-  //userName
-  setUserName(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_userName, s);
-  }
+  Future<void> setIsSlider(bool value) async => _setBool(_isSlider, value);
+  Future<bool> getIsSlider() async => _getBool(_isSlider);
 
-  getUserName() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_userName) ?? "";
-    return stringValue;
-  }
+  Future<void> setIsRtl(bool value) async => _setBool(_isRtl, value);
+  Future<bool> getIsRtl() async => _getBool(_isRtl);
 
-  //niceName
-  setNiceName(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_niceName, s);
-  }
+  Future<void> setSiteLanguage(String value) async => _setString(_siteLanguage, value);
+  Future<String> getSiteLanguage() async => _getString(_siteLanguage);
 
-  getNiceName() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_niceName) ?? "";
-    return stringValue;
-  }
+  Future<void> setWalletActive(bool value) async => _setBool(_walletActive, value);
+  Future<bool> getWalletActive() async => _getBool(_walletActive);
 
-  //Email
-  setEmail(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_email, s);
-  }
+  Future<void> setIsUserExists(String value) async => _setString(_isUserExists, value);
+  Future<String> getIsUserExists() async => _getString(_isUserExists);
 
-  getEmail() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_email) ?? "";
-    return stringValue;
-  }
 
-  //URL
-  setUrl(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_url, s);
-  }
+  // User Info
+  Future<void> setUserId(String value) async => _setString(_userId, value);
+  Future<String> getUserId() async => _getString(_userId);
 
-  getUrl() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_url) ?? "";
-    return stringValue;
-  }
+  Future<void> setUserName(String value) async => _setString(_userName, value);
+  Future<String> getUserName() async => _getString(_userName);
 
-  //RegisteredDate
-  setRegisteredDate(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_registeredDate, s);
-  }
+  Future<void> setNiceName(String value) async => _setString(_niceName, value);
+  Future<String> getNiceName() async => _getString(_niceName);
 
-  getRegisteredDate() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_registeredDate) ?? "";
-    return stringValue;
-  }
+  Future<void> setEmail(String value) async => _setString(_email, value);
+  Future<String> getEmail() async => _getString(_email);
 
-  //Description
-  setDescription(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_description, s);
-  }
+  Future<void> setUrl(String value) async => _setString(_url, value);
+  Future<String> getUrl() async => _getString(_url);
 
-  getDescription() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_description) ?? "";
-    return stringValue;
-  }
+  Future<void> setRegisteredDate(String value) async => _setString(_registeredDate, value);
+  Future<String> getRegisteredDate() async => _getString(_registeredDate);
 
-  //Capabilities
-  setCapabilities(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_capabilities, s);
-  }
+  Future<void> setDescription(String value) async => _setString(_description, value);
+  Future<String> getDescription() async => _getString(_description);
 
-  getCapabilities() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_capabilities) ?? "";
-    return stringValue;
-  }
+  Future<void> setCapabilities(String value) async => _setString(_capabilities, value);
+  Future<String> getCapabilities() async => _getString(_capabilities);
 
-  //Display Name
-  setDisplayName(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_displayName, s);
-  }
+  Future<void> setDisplayName(String value) async => _setString(_displayName, value);
+  Future<String> getDisplayName() async => _getString(_displayName);
 
-  getDisplayName() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_displayName) ?? "";
-    return stringValue;
-  }
+  Future<void> setFirstname(String value) async => _setString(_firstname, value);
+  Future<String> getFirstname() async => _getString(_firstname);
 
-  //First Name
-  setFirstname(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_firstname, s);
-  }
+  Future<void> setLastname(String value) async => _setString(_lastname, value);
+  Future<String> getLastname() async => _getString(_lastname);
 
-  getFirstname() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_firstname) ?? "";
-    return stringValue;
-  }
+  Future<void> setNickName(String value) async => _setString(_nickname, value);
+  Future<String> getNickName() async => _getString(_nickname);
 
-  //Lastname
-  setLastname(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_lastname, s);
-  }
+  Future<void> setMobile(String value) async => _setString(_mobile, value);
+  Future<String> getMobile() async => _getString(_mobile);
 
-  getLastname() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_lastname) ?? "";
-    return stringValue;
-  }
+  Future<void> setGender(String value) async => _setString(_gender, value);
+  Future<String> getGender() async => _getString(_gender);
 
-  //nickName
-  setNickName(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_nickname, s);
-  }
+  Future<void> setDob(String value) async => _setString(_dob, value);
+  Future<String> getDob() async => _getString(_dob);
 
-  getNickName() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_nickname) ?? "";
-    return stringValue;
-  }
+  Future<void> setUserImage(String value) async => _setString(_pgsUserImage, value);
+  Future<String> getUserImage() async => _getString(_pgsUserImage);
 
-  //Mobile
-  setMobile(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_mobile, s);
-  }
-
-  getMobile() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_mobile) ?? "";
-    return stringValue;
-  }
-
-  //Gender
-  setGender(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_gender, s);
-  }
-
-  getGender() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_gender) ?? "";
-    return stringValue;
-  }
-
-  //Dob
-  setDob(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_dob, s);
-  }
-
-  getDob() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_dob) ?? "";
-    return stringValue;
-  }
-
-  //UserImage
-  setUserImage(String s) async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_pgsUserImage, s);
-  }
-
-  getUserImage() async {
-    prefs = await SharedPreferences.getInstance();
-    String stringValue = prefs.getString(_pgsUserImage) ?? "";
-    return stringValue;
-  }
-
-  clearPreference() async {
-    prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_deviceToken);
+  // Clear Preference
+  Future<void> clearPreference() async {
+    final prefs = await _prefs;
+    await prefs.clear();
   }
 }
+
+
+  // // Example usage
+  // await prefs.setFirstOpen(true);
+  // bool isFirstOpen = await prefs.getFirstOpen();
+  // print("First Open: $isFirstOpen");
+  //
+  // await prefs.setPrimaryColor("#FF5733");
+  // String primaryColor = await prefs.getPrimaryColor();
+  // print("Primary Color: $primaryColor");
