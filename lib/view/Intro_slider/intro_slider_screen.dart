@@ -4,7 +4,6 @@ import 'package:ciyashopflutter/utils/color_constant.dart';
 import 'package:ciyashopflutter/view/Intro_slider/widget/page_Items.dart';
 import 'package:ciyashopflutter/view/Intro_slider/widget/page_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 
@@ -48,8 +47,8 @@ class IntroSliderScreen extends StatelessWidget {
                           onPressed: () {
                             controller.skipPage();
                           },
-                          child: TextBodyMedium(
-                            text: AppLocalizations.of(context)!.skip.toUpperCase(),
+                          child: const TextBodyMedium(
+                            text: "Skip",
                           ),
                         ),
                         Expanded(
@@ -71,7 +70,7 @@ class IntroSliderScreen extends StatelessWidget {
                         TextButton(
                           onPressed: () => controller.nextPage(),
                           child: TextBodyMedium(
-                            text: AppLocalizations.of(context)!.next.toUpperCase(),
+                            text: "next".toUpperCase(),
                           ),
                         ),
                       ],
@@ -80,7 +79,7 @@ class IntroSliderScreen extends StatelessWidget {
                       onPressed: () {
                         controller.onGetStarted(context);
                       },
-                      child: Text(AppLocalizations.of(context)!.get_started.toUpperCase()),
+                      child: Text("get started".toUpperCase()),
                     ),
             ),
           ),

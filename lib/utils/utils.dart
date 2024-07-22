@@ -37,7 +37,7 @@ showLoader() {
                   BlendMode.modulate,
                 ),
                 child: Lottie.asset(
-                  Assets.ciyashopFlutterAssetsLoader,
+                  Assets.assetsLoader,
                 ),
               ),
             ),

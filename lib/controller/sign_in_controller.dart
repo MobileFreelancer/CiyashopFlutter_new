@@ -6,7 +6,6 @@ import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:ciyashopflutter/utils/utils.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
 
 class SignInController extends GetxController {
@@ -39,13 +38,13 @@ class SignInController extends GetxController {
   userLogin(context) async {
     FocusScope.of(context).unfocus();
     if (emailController.text.isEmpty) {
-      showToast(Msg: AppLocalizations.of(context)!.enteremail);
+      showToast(Msg: "enter email");
     } else if (passwordController.value.text.isEmpty) {
-      showToast(Msg: AppLocalizations.of(context)!.enterpassword);
+      showToast(Msg: "enter password");
     } else {
       showLoader();
       var result =
-      await _userAuthenticationRepository.callLogin(email: emailController.text, password: passwordController.text);
+          await _userAuthenticationRepository.callLogin(email: emailController.text, password: passwordController.text);
       print("result $result");
       hideLoader();
       if (result is AuthModel) {

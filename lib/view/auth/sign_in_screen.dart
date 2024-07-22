@@ -2,23 +2,20 @@ import 'package:ciyashopflutter/component/basic_widget.dart';
 import 'package:ciyashopflutter/component/custom_rich_text.dart';
 import 'package:ciyashopflutter/component/custom_text.dart';
 import 'package:ciyashopflutter/component/custom_text_field.dart';
-import 'package:ciyashopflutter/controller/network_controller.dart';
 import 'package:ciyashopflutter/controller/sign_in_controller.dart';
 import 'package:ciyashopflutter/generated/assets.dart';
 import 'package:ciyashopflutter/utils/color_constant.dart';
-import 'package:ciyashopflutter/utils/extension.dart';
-import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:ciyashopflutter/utils/validations.dart';
 import 'package:ciyashopflutter/view/auth/widget/or_divider.dart';
 import 'package:ciyashopflutter/view/auth/widget/social_button.dart';
 import 'package:ciyashopflutter/view/auth/widget/top_logo.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 
 class SignInScreen extends StatelessWidget {
   SignInScreen({super.key});
+
   final _loginKey = GlobalKey<FormState>();
   final SignInController controller = Get.put(SignInController());
 
@@ -50,11 +47,11 @@ class SignInScreen extends StatelessWidget {
                   children: [
                     const Gap(40),
                     TextHeadlineMedium(
-                      text: AppLocalizations.of(context)!.signin.toCapitalize(),
+                      text: "sign in".tr,
                     ),
                     const Gap(40),
                     TextFieldRegular(
-                      hintText: AppLocalizations.of(context)!.email.toCapitalize(),
+                      hintText: "Email",
                       iconPath: Assets.imagesEmail,
                       textInputType: TextInputType.emailAddress,
                       textController: controller.emailController,
@@ -64,7 +61,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                     const Gap(30),
                     TextFieldRegular(
-                      hintText: AppLocalizations.of(context)!.password.toCapitalize(),
+                      hintText: "Password",
                       iconPath: Assets.imagesLock,
                       textInputType: TextInputType.visiblePassword,
                       textController: controller.passwordController,
@@ -78,10 +75,10 @@ class SignInScreen extends StatelessWidget {
                       alignment: Alignment.centerRight,
                       child: TextButton(
                         onPressed: () {
-
+                          Get.updateLocale(const Locale("es", "ES"));
                         },
                         child: TextLabelMedium(
-                          text: AppLocalizations.of(context)!.forgotpassword.toCapitalize(),
+                          text: "forgot password".tr,
                           color: ColorConstant.primaryColor,
                         ),
                       ),
@@ -93,7 +90,7 @@ class SignInScreen extends StatelessWidget {
                           controller.userLogin(context);
                         }
                       },
-                      child: Text(AppLocalizations.of(context)!.signin.toUpperCase().toUpperCase()),
+                      child: Text("sign in".tr),
                     ),
                     const Gap(30),
                     SocialButton(),
@@ -104,7 +101,6 @@ class SignInScreen extends StatelessWidget {
                       normalText: "Don't have an Account?",
                       linkedText: "Sign Up",
                       onClick: () {
-                        Get.find<NetworkController>().showDialog();
                         //Get.toNamed(RoutesName.signUpScreen);
                       },
                     ),

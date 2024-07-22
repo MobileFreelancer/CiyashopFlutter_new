@@ -3,7 +3,6 @@ import 'package:ciyashopflutter/utils/app_preferences.dart';
 import 'package:ciyashopflutter/utils/constant.dart';
 import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
 
 class IntroSliderController extends GetxController {
@@ -21,21 +20,9 @@ class IntroSliderController extends GetxController {
     final context = Get.context!;
     listPage.assignAll(
       [
-        {
-          "title": AppLocalizations.of(context)!.title_intro_one,
-          "image": Assets.imagesIntro1,
-          "description": AppLocalizations.of(context)!.intro_one
-        },
-        {
-          "title": AppLocalizations.of(context)!.title_intro_two,
-          "image": Assets.imagesIntro2,
-          "description": AppLocalizations.of(context)!.intro_two
-        },
-        {
-          "title": AppLocalizations.of(context)!.title_intro_three,
-          "image": Assets.imagesIntro3,
-          "description": AppLocalizations.of(context)!.intro_three
-        },
+        {"title": "title intro one".tr, "image": Assets.imagesIntro1, "description": "intro one".tr},
+        {"title": "title intro two".tr, "image": Assets.imagesIntro2, "description": "intro two".tr},
+        {"title": "title intro three".tr, "image": Assets.imagesIntro3, "description": "intro three".tr},
       ],
     );
   }

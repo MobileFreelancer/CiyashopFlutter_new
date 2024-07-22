@@ -9,7 +9,6 @@ import 'package:ciyashopflutter/utils/extension.dart';
 import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 
@@ -39,23 +38,23 @@ class SignUpScreen extends StatelessWidget {
                 children: [
                   const Gap(30),
                   TextHeadlineSmall(
-                    text: AppLocalizations.of(context)!.signup.toUpperCase(),
+                    text: "Sign Up".toUpperCase(),
                   ),
                   const Gap(30),
                   TextFieldRegular(
-                    hintText: AppLocalizations.of(context)!.name.toCapitalize(),
+                    hintText: "Name".toCapitalize(),
                     iconPath: Assets.imagesUser,
                     textInputType: TextInputType.name,
                   ),
                   const Gap(30),
                   TextFieldRegular(
-                    hintText: AppLocalizations.of(context)!.email.toCapitalize(),
+                    hintText: "email".toCapitalize(),
                     iconPath: Assets.imagesEmail,
                     textInputType: TextInputType.emailAddress,
                   ),
                   const Gap(30),
                   TextFieldCountry(
-                    hintText: AppLocalizations.of(context)!.phonenumber.toCapitalize(),
+                    hintText: "Phone Number".toCapitalize(),
                     iconPath: Assets.imagesPhone,
                     textInputType: TextInputType.phone,
                     onClick: () {
@@ -68,14 +67,14 @@ class SignUpScreen extends StatelessWidget {
                   ),
                   const Gap(30),
                   TextFieldRegular(
-                    hintText: AppLocalizations.of(context)!.password.toCapitalize(),
+                    hintText: "Password".toCapitalize(),
                     iconPath: Assets.imagesLock,
                     textInputType: TextInputType.visiblePassword,
                     secureText: true,
                   ),
                   const Gap(30),
                   TextFieldRegular(
-                    hintText: AppLocalizations.of(context)!.confirmpassword.toCapitalize(),
+                    hintText: "Confirm Password".toCapitalize(),
                     iconPath: Assets.imagesLock,
                     textInputType: TextInputType.visiblePassword,
                     secureText: true,
@@ -85,7 +84,7 @@ class SignUpScreen extends StatelessWidget {
                     onPressed: () {
                       Get.offNamed(RoutesName.mainScreen);
                     },
-                    child: Text(AppLocalizations.of(context)!.signup.toCapitalize().toUpperCase()),
+                    child: Text("Sign Up".toUpperCase()),
                   ),
                   const Gap(30),
                   Stack(

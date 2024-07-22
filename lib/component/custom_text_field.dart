@@ -50,7 +50,7 @@ class TextFieldRegular extends StatelessWidget {
       child: Row(
         children: [
           isIcon ? Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: ImageIcon(
               AssetImage(iconPath),
               color: ColorConstant.primaryColor,
@@ -74,7 +74,7 @@ class TextFieldRegular extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: hintText,
                 hintStyle: Theme.of(context).textTheme.bodySmall?.apply(color: ColorConstant.textBody),
-                contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 17),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 0, vertical: 17),
                 border: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide.none),
                 counterText: "",
               ),

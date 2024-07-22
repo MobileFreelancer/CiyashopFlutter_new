@@ -3,14 +3,16 @@ import 'dart:async';
 import 'package:ciyashopflutter/controller/global_controller.dart';
 import 'package:ciyashopflutter/controller/theme_controller.dart';
 import 'package:ciyashopflutter/firebase_options.dart';
+import 'package:ciyashopflutter/utils/Localization.dart';
 import 'package:ciyashopflutter/utils/color_constant.dart';
 import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,12 +36,17 @@ class App extends StatelessWidget {
         builder: (context, orientation, screenType) => GetMaterialApp(
           title: 'Ciyashop v3',
           debugShowCheckedModeBanner: false,
-          theme: themeController.getThemes(),
+          locale: const Locale('en', 'US'),
+          fallbackLocale: const Locale('en', 'US'),
           initialBinding: GlobalController(),
+          translations: Localization(),
+          theme: themeController.getThemes(),
           themeMode: themeController.themeMode.value,
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
-          supportedLocales: AppLocalizations.supportedLocales,
-          locale: const Locale('en'),
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
           getPages: getPageRoute(),
           initialRoute: RoutesName.splashScreen,
           transitionDuration: const Duration(milliseconds: 500),

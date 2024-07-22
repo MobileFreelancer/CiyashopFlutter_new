@@ -7,8 +7,10 @@ import 'package:ciyashopflutter/utils/color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+
 class WishListViewPage extends StatelessWidget {
   const WishListViewPage({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {

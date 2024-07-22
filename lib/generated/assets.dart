@@ -4,7 +4,7 @@ class Assets {
 
   static const String assetsLoader = 'assets/loader.gif';
   static const String assetsNetwork = 'assets/network.json';
-  static const String ciyashopFlutterAssetsLoader = 'assets/loader.json';
+  static const String ciyashopFlutterNewAssetsLoader = 'assets/loader.json';
   static const String imagesAddress = 'assets/images/address.png';
   static const String imagesAppBarLogo = 'assets/images/appBarLogo.png';
   static const String imagesApple = 'assets/images/apple.png';
@@ -92,5 +92,14 @@ class Assets {
   static const String imagesUser = 'assets/images/user.png';
   static const String imagesWallet = 'assets/images/wallet.png';
   static const String imagesWhatsappOuter = 'assets/images/whatsapp_outer.png';
+  static const String localizationAppAr = 'assets/localization/app_ar.json';
+  static const String localizationAppDe = 'assets/localization/app_de.json';
+  static const String localizationAppEn = 'assets/localization/app_en.json';
+  static const String localizationAppEs = 'assets/localization/app_es.json';
+  static const String localizationAppFr = 'assets/localization/app_fr.json';
+  static const String localizationAppJa = 'assets/localization/app_ja.json';
+  static const String localizationAppPt = 'assets/localization/app_pt.json';
+  static const String localizationAppRu = 'assets/localization/app_ru.json';
+  static const String localizationAppSv = 'assets/localization/app_sv.json';
 
 }
