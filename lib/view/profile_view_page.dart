@@ -8,10 +8,7 @@ import 'package:ciyashopflutter/utils/color_constant.dart';
 import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:ciyashopflutter/utils/size_constant.dart';
 import 'package:ciyashopflutter/utils/utils.dart';
-import 'package:ciyashopflutter/view/about_us_screen.dart';
-import 'package:ciyashopflutter/view/contact_us_screen.dart';
 import 'package:ciyashopflutter/view/filter_product_screen.dart';
-import 'package:ciyashopflutter/view/my_coupon_screen.dart';
 import 'package:ciyashopflutter/view/order_deliver_success_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -222,6 +219,10 @@ class ProfileViewPage extends StatelessWidget {
                                   case "Account Setting":
                                     Get.to(() => FilterProductScreen());
                                     break;
+
+                                  case "Logout":
+                                    controller.showLogoutDialog();
+                                    break;
                                 }
                               },
                               child: SizedBox(
@@ -230,20 +231,22 @@ class ProfileViewPage extends StatelessWidget {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Row(
-                                      children: [
-                                        const Gap(20),
-                                        ImageIcon(
-                                          AssetImage(controller.profileList[index].logo.toString()),
-                                          size: 20,
-                                        ),
-                                        const Gap(20),
-                                        TextBodyMedium(text: controller.profileList[index].name.toString()),
-                                      ],
+                                    Obx(
+                                      () => Row(
+                                        children: [
+                                          const Gap(20),
+                                          ImageIcon(
+                                            AssetImage(controller.profileList[index].logo.toString()),
+                                            size: 20,
+                                          ),
+                                          const Gap(20),
+                                          TextBodyMedium(text: controller.profileList[index].name.toString()),
+                                        ],
+                                      ),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(horizontal: 20),
-                                      child: controller.profileList[index] == "Notification"
+                                      child: controller.profileList[index].name == "Notification"
                                           ? Obx(
                                               () => SizedBox(
                                                 width: 50,

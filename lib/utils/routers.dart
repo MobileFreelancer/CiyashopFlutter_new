@@ -107,7 +107,7 @@ getPageRoute() {
     GetPage(
       name: RoutesName.myCouponScreen,
       page: () => MyCouponScreen(),
-    )
+    ),
   ];
 }
 

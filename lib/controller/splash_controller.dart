@@ -47,7 +47,7 @@ class SplashController extends GetxController {
       const Duration(seconds: 3),
       () async {
         Get.offNamed(
-          !Config.isSliderShow
+          !slider
               ? await AppPreference.instance.getIsLogin()
                   ? RoutesName.signInScreen
                   : RoutesName.mainScreen

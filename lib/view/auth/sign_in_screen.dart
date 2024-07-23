@@ -7,7 +7,7 @@ import 'package:ciyashopflutter/controller/sign_in_controller.dart';
 import 'package:ciyashopflutter/generated/assets.dart';
 import 'package:ciyashopflutter/utils/color_constant.dart';
 import 'package:ciyashopflutter/utils/extension.dart';
-import 'package:ciyashopflutter/utils/routers.dart';
+import 'package:ciyashopflutter/utils/size_constant.dart';
 import 'package:ciyashopflutter/utils/validations.dart';
 import 'package:ciyashopflutter/view/auth/widget/or_divider.dart';
 import 'package:ciyashopflutter/view/auth/widget/social_button.dart';
@@ -19,6 +19,7 @@ import 'package:get/get.dart';
 
 class SignInScreen extends StatelessWidget {
   SignInScreen({super.key});
+
   final _loginKey = GlobalKey<FormState>();
   final SignInController controller = Get.put(SignInController());
 
@@ -78,7 +79,8 @@ class SignInScreen extends StatelessWidget {
                       alignment: Alignment.centerRight,
                       child: TextButton(
                         onPressed: () {
-
+                          // Get.toNamed(RoutesName.forgetPasswordScreen);
+                          controller.showForgetPassDialog();
                         },
                         child: TextLabelMedium(
                           text: AppLocalizations.of(context)!.forgotpassword.toCapitalize(),

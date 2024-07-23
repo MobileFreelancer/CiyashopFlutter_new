@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:ciyashopflutter/model/auth_model.dart' as auth;
+import 'package:ciyashopflutter/model/forget_password_model.dart' as forget_pass;
 import 'package:ciyashopflutter/repository/api_helper/api_constant.dart';
 import 'package:ciyashopflutter/repository/api_helper/api_services.dart';
 import 'package:ciyashopflutter/repository/api_helper/api_status.dart';
@@ -23,11 +24,17 @@ abstract class UserAuthenticationRepository {
 
   callSocialLogin();
 
+  callForgetPassword({required String email});
+
+  callResetPassword({required String email, required String password, required String key});
+
   callRegistration({required Map<String, dynamic> userDetail});
 
   verifyPhoneAuth();
 
   signOut();
+
+  logout();
 }
 
 class UserAuthenticationRepositoryImpl extends UserAuthenticationRepository {
@@ -169,6 +176,61 @@ class UserAuthenticationRepositoryImpl extends UserAuthenticationRepository {
 
   @override
   verifyPhoneAuth() {}
+
+  @override
+  callForgetPassword({required String email}) async {
+    var params = {
+      APIConstant.instance.email: email,
+    };
+
+    var response = await ApiServices.instance.postAPICall(
+      param: params,
+      url: APIConstant.instance.forgotPasswordApi,
+      paramType: ParamType.raw,
+    );
+
+    if (response is Success) {
+      return forget_pass.forgetPasswordModelFromJson(response.response.toString());
+    } else if (response is Failure) {
+      return response;
+    }
+  }
+
+  @override
+  callResetPassword({required String email, required String password, required String key}) async {
+    var params = {
+      APIConstant.instance.email: email,
+      APIConstant.instance.password: password,
+      APIConstant.instance.key: key,
+    };
+
+    var response = await ApiServices.instance.postAPICall(
+      param: params,
+      url: APIConstant.instance.updatePasswordApi,
+      paramType: ParamType.raw,
+    );
+
+    if (response is Success) {
+      return forget_pass.forgetPasswordModelFromJson(response.response.toString());
+    } else if (response is Failure) {
+      return response;
+    }
+  }
+
+  @override
+  logout() async {
+    var response = await ApiServices.instance.postAPICall(
+      param: {},
+      url: APIConstant.instance.logoutApi,
+      paramType: ParamType.raw,
+    );
+    if (response is Success) {
+      return forget_pass.forgetPasswordModelFromJson(response.response.toString());
+    } else if (response is Failure) {
+      return response;
+    }
+
+  }
 }
 
 /// Generates a cryptographically secure random nonce, to be included in a

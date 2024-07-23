@@ -19,6 +19,7 @@ class UserinfoController extends GetxController {
   var gender = "".obs;
   var dob = "".obs;
   var pgsUserImage = "".obs;
+  var isLogin = false.obs;
 
   setUserDataByModel({required auth.User userInfo}) async {
     AppPreference.instance.setUserId(userInfo.id.toString() ?? "");
@@ -37,6 +38,7 @@ class UserinfoController extends GetxController {
     AppPreference.instance.setGender(userInfo.gender ?? "");
     AppPreference.instance.setDob(userInfo.dob ?? "");
     AppPreference.instance.setUserImage(userInfo.pgsUserImage ?? "");
+    AppPreference.instance.setIsLogin(true);
     await setUserInfoFromLocal();
   }
 
@@ -57,6 +59,7 @@ class UserinfoController extends GetxController {
     gender.value = await AppPreference.instance.getGender();
     dob.value = await AppPreference.instance.getDob();
     pgsUserImage.value = await AppPreference.instance.getUserImage();
+    isLogin.value = await AppPreference.instance.getIsLogin();
   }
 
   getUserDataByModel() {
