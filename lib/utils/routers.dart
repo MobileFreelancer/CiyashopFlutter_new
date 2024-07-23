@@ -1,3 +1,4 @@
+import 'package:ciyashopflutter/view/my_orders/order_detail_screen.dart';
 import 'package:ciyashopflutter/view/Intro_slider/intro_slider_screen.dart';
 import 'package:ciyashopflutter/view/about_us_screen.dart';
 import 'package:ciyashopflutter/view/auth/sign_in_screen.dart';
@@ -6,6 +7,7 @@ import 'package:ciyashopflutter/view/contact_us_screen.dart';
 import 'package:ciyashopflutter/view/main_screen.dart';
 import 'package:ciyashopflutter/view/my_address_screen.dart';
 import 'package:ciyashopflutter/view/my_coupon_screen.dart';
+import 'package:ciyashopflutter/view/my_orders/my_order_screen.dart';
 import 'package:ciyashopflutter/view/product/produt_list_screen.dart';
 import 'package:ciyashopflutter/view/splash_screen.dart';
 import 'package:get/get.dart';
@@ -108,6 +110,14 @@ getPageRoute() {
       name: RoutesName.myCouponScreen,
       page: () => MyCouponScreen(),
     ),
+    GetPage(
+      name: RoutesName.myOrderScreen,
+      page: () => MyOrderScreen(),
+    ),
+    GetPage(
+      name: RoutesName.orderDetailScreen,
+      page: () => OrderDetailScreen(),
+    ),
   ];
 }
 
@@ -122,4 +132,6 @@ class RoutesName {
   static const String contactUsScreen = '/ContactUsScreen';
   static const String aboutUsScreen = '/ContactUsScreen';
   static const String myCouponScreen = '/MyCouponScreen';
+  static const String myOrderScreen = '/MyOrderScreen';
+  static const String orderDetailScreen = '/OrderDetailScreen';
 }

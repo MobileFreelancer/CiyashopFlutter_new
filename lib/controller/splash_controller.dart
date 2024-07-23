@@ -41,14 +41,15 @@ class SplashController extends GetxController {
   }
 
   redirectToIntroSlider() async {
-    bool slider = await AppPreference.instance.getFirstOpen();
+    bool slider = await AppPreference.instance.getIsSlider();
+    bool isLogin = await AppPreference.instance.getIsLogin();
     isLoading.value = false;
     Timer(
       const Duration(seconds: 3),
       () async {
         Get.offNamed(
           !slider
-              ? await AppPreference.instance.getIsLogin()
+              ? isLogin
                   ? RoutesName.signInScreen
                   : RoutesName.mainScreen
               : RoutesName.introSliderScreen,

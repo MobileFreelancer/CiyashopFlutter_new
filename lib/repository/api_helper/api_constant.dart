@@ -19,6 +19,7 @@ class APIConstant {
   final String forgotPasswordApi = "${Apis.MAIN_URL}forgot_password";
   final String updatePasswordApi = "${Apis.MAIN_URL}update_password";
   final String logoutApi = "${Apis.MAIN_URL}logout";
+  final String ordersApi = "${Apis.MAIN_URL}orders";
 
   //API_REQUEST PARAM
   final String appVer = "app-ver";
@@ -30,6 +31,8 @@ class APIConstant {
   final String userName = "username";
   final String mobile = "mobile";
   final String key = "key";
+  final String page = "page";
+  final String customer = "customer";
 
 }
 

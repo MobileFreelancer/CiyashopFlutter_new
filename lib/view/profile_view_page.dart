@@ -3,7 +3,7 @@ import 'package:ciyashopflutter/component/custom_app_bar.dart';
 import 'package:ciyashopflutter/component/custom_text.dart';
 import 'package:ciyashopflutter/controller/profile_controller.dart';
 import 'package:ciyashopflutter/generated/assets.dart';
-import 'package:ciyashopflutter/order_detail_screen.dart';
+import 'package:ciyashopflutter/view/my_orders/order_detail_screen.dart';
 import 'package:ciyashopflutter/utils/color_constant.dart';
 import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:ciyashopflutter/utils/size_constant.dart';
@@ -188,20 +188,24 @@ class ProfileViewPage extends StatelessWidget {
                                     Get.offNamed(RoutesName.signInScreen);
                                     break;
 
+                                  case "My Orders":
+                                    Get.toNamed(RoutesName.myOrderScreen);
+                                    break;
+
                                   case "My Address":
-                                    Get.to(RoutesName.myAddressScreen);
+                                    Get.toNamed(RoutesName.myAddressScreen);
                                     break;
 
                                   case "Contact Us":
-                                    Get.to(RoutesName.contactUsScreen);
+                                    Get.toNamed(RoutesName.contactUsScreen);
                                     break;
 
                                   case "About Us":
-                                    Get.to(RoutesName.aboutUsScreen);
+                                    Get.toNamed(RoutesName.aboutUsScreen);
                                     break;
 
                                   case "My Coupons":
-                                    Get.to(RoutesName.myCouponScreen);
+                                    Get.toNamed(RoutesName.myCouponScreen);
                                     break;
 
                                   case "Choose Currency":
@@ -213,7 +217,7 @@ class ProfileViewPage extends StatelessWidget {
                                     break;
 
                                   case "My Orders":
-                                    Get.to(() => OrderDetailScreen());
+                                    Get.toNamed(RoutesName.orderDetailScreen);
                                     break;
 
                                   case "Account Setting":
