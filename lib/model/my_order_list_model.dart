@@ -44,10 +44,10 @@ class MyOrderListModel {
     this.lineItems,
     this.taxLines,
     this.shippingLines,
-    this.feeLines,
-    this.couponLines,
-    this.refunds,
-    this.orderTrackingData,
+    // this.feeLines,
+    // this.couponLines,
+    // this.refunds,
+    // this.orderTrackingData,
   });
 
   MyOrderListModel.fromJson(dynamic json) {
@@ -100,39 +100,39 @@ class MyOrderListModel {
     if (json['tax_lines'] != null) {
       taxLines = [];
       json['tax_lines'].forEach((v) {
-        taxLines?.add(Dynamic.fromJson(v));
+        taxLines?.add(TaxLines.fromJson(v));
       });
     }
     if (json['shipping_lines'] != null) {
       shippingLines = [];
       json['shipping_lines'].forEach((v) {
-        shippingLines?.add(Dynamic.fromJson(v));
+        shippingLines?.add(ShippingLine.fromJson(v));
       });
     }
-    if (json['fee_lines'] != null) {
-      feeLines = [];
-      json['fee_lines'].forEach((v) {
-        feeLines?.add(Dynamic.fromJson(v));
-      });
-    }
-    if (json['coupon_lines'] != null) {
-      couponLines = [];
-      json['coupon_lines'].forEach((v) {
-        couponLines?.add(Dynamic.fromJson(v));
-      });
-    }
-    if (json['refunds'] != null) {
-      refunds = [];
-      json['refunds'].forEach((v) {
-        refunds?.add(Dynamic.fromJson(v));
-      });
-    }
-    if (json['order_tracking_data'] != null) {
-      orderTrackingData = [];
-      json['order_tracking_data'].forEach((v) {
-        orderTrackingData?.add(Dynamic.fromJson(v));
-      });
-    }
+    // if (json['fee_lines'] != null) {
+    //   feeLines = [];
+    //   json['fee_lines'].forEach((v) {
+    //     feeLines?.add([]);
+    //   });
+    // }
+    // if (json['coupon_lines'] != null) {
+    //   couponLines = [];
+    //   json['coupon_lines'].forEach((v) {
+    //     couponLines?.add([]);
+    //   });
+    // }
+    // if (json['refunds'] != null) {
+    //   refunds = [];
+    //   json['refunds'].forEach((v) {
+    //     refunds?.add([]);
+    //   });
+    // }
+    // if (json['order_tracking_data'] != null) {
+    //   orderTrackingData = [];
+    //   json['order_tracking_data'].forEach((v) {
+    //     orderTrackingData?.add([]);
+    //   });
+    // }
   }
 
   int? id;
@@ -172,11 +172,11 @@ class MyOrderListModel {
   List<MetaData>? metaData;
   List<LineItems>? lineItems;
   List<TaxLines>? taxLines;
-  List<dynamic>? shippingLines;
-  List<dynamic>? feeLines;
-  List<dynamic>? couponLines;
-  List<dynamic>? refunds;
-  List<dynamic>? orderTrackingData;
+  List<ShippingLine>? shippingLines;
+  // List<Object>? feeLines;
+  // List<Object>? couponLines;
+  // List<Object>? refunds;
+  // List<Object>? orderTrackingData;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -230,18 +230,18 @@ class MyOrderListModel {
     if (shippingLines != null) {
       map['shipping_lines'] = shippingLines?.map((v) => v.toJson()).toList();
     }
-    if (feeLines != null) {
-      map['fee_lines'] = feeLines?.map((v) => v.toJson()).toList();
-    }
-    if (couponLines != null) {
-      map['coupon_lines'] = couponLines?.map((v) => v.toJson()).toList();
-    }
-    if (refunds != null) {
-      map['refunds'] = refunds?.map((v) => v.toJson()).toList();
-    }
-    if (orderTrackingData != null) {
-      map['order_tracking_data'] = orderTrackingData?.map((v) => v.toJson()).toList();
-    }
+    // if (feeLines != null) {
+    //   map['fee_lines'] = feeLines?.map((v) => []).toList();
+    // }
+    // if (couponLines != null) {
+    //   map['coupon_lines'] = couponLines?.map((v) => []).toList();
+    // }
+    // if (refunds != null) {
+    //   map['refunds'] = refunds?.map((v) => []).toList();
+    // }
+    // if (orderTrackingData != null) {
+    //   map['order_tracking_data'] = orderTrackingData?.map((v) => []).toList();
+    // }
     return map;
   }
 }
@@ -281,13 +281,13 @@ class LineItems {
     if (json['taxes'] != null) {
       taxes = [];
       json['taxes'].forEach((v) {
-        taxes?.add(Dynamic.fromJson(v));
+        taxes?.add(TaxLines.fromJson(v));
       });
     }
     if (json['meta_data'] != null) {
       metaData = [];
       json['meta_data'].forEach((v) {
-        metaData?.add(Dynamic.fromJson(v));
+        metaData?.add(MetaData.fromJson(v));
       });
     }
     sku = json['sku'];
@@ -338,7 +338,7 @@ class LineItems {
 
 TaxLines taxLinesFromJson(String str) => TaxLines.fromJson(json.decode(str));
 
-String taxLinesToJson(MetaData data) => json.encode(data.toJson());
+String taxLinesToJson(TaxLines data) => json.encode(data.toJson());
 
 class TaxLines {
   TaxLines({
@@ -382,6 +382,79 @@ class TaxLines {
     map['taxTotal'] = taxTotal;
     map['shipping_tax_total'] = shippingTaxTotal;
     map['meta_data'] = metaData;
+    return map;
+  }
+}
+
+
+ShippingLine shippingLinesFromJson(String str) => ShippingLine.fromJson(json.decode(str));
+
+String shippingLinesToJson(ShippingLine data) => json.encode(data.toJson());
+
+class ShippingLine {
+  ShippingLine({
+    this.id,
+    this.methodTitle,
+    this.methodId,
+    this.total,
+    this.totalTax,
+    this.taxes,
+  });
+
+  ShippingLine.fromJson(dynamic json) {
+    id = json['id'];
+    methodTitle = json['method_title'];
+    methodId = json['method_id'];
+    total = json['total'];
+    totalTax = json['total_tax'];
+    taxes = json['taxes'];
+  }
+
+  int? id;
+  String? methodTitle;
+  int? methodId;
+  int? total;
+  int? totalTax;
+  List<Taxess>? taxes;
+
+  Map<String, dynamic> toJson() {
+    final map = <String, dynamic>{};
+    map['id'] = id;
+    map['method_title'] = methodTitle;
+    map['method_id'] = methodId;
+    map['total'] = total;
+    map['total_tax'] = totalTax;
+    map['taxes'] = taxes;
+    return map;
+  }
+}
+
+Taxess taxessLinesFromJson(String str) => Taxess.fromJson(json.decode(str));
+
+String taxessLinesToJson(Taxess data) => json.encode(data.toJson());
+
+class Taxess {
+  Taxess({
+    this.id,
+    this.total,
+    this.subtotal,
+  });
+
+  Taxess.fromJson(dynamic json) {
+    id = json['id'];
+    total = json['total'];
+    subtotal = json['subtotal'];
+  }
+
+  int? id;
+  String? total;
+  String? subtotal;
+
+  Map<String, dynamic> toJson() {
+    final map = <String, dynamic>{};
+    map['id'] = id;
+    map['total'] = total;
+    map['subtotal'] = subtotal;
     return map;
   }
 }

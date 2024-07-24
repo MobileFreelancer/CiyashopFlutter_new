@@ -2,7 +2,9 @@ import 'package:ciyashopflutter/component/basic_widget.dart';
 import 'package:ciyashopflutter/component/custom_text.dart';
 import 'package:ciyashopflutter/generated/assets.dart';
 import 'package:ciyashopflutter/utils/color_constant.dart';
+import 'package:ciyashopflutter/utils/routers.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class OrderWidgets extends StatelessWidget {
   const OrderWidgets({super.key});
@@ -81,7 +83,6 @@ class OrderWidgets extends StatelessWidget {
                                 text: "Total Amount:",
                                 color: ColorConstant.textBody,
                               ),
-
                               TextTitleSmall(
                                 text: "50",
                                 color: ColorConstant.primaryColor,
@@ -94,7 +95,6 @@ class OrderWidgets extends StatelessWidget {
                                 text: "Quantity:",
                                 color: ColorConstant.textBody,
                               ),
-
                               TextTitleSmall(
                                 text: "1",
                                 color: ColorConstant.primaryColor,
@@ -103,15 +103,20 @@ class OrderWidgets extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
-                        decoration: BoxDecoration(
-                          color: ColorConstant.primaryColor,
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: const TextTitleSmall(
-                          text: "Details",
-                          color: Colors.white,
+                      InkWell(
+                        onTap: () {
+                          Get.toNamed(RoutesName.orderDetailScreen);
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                          decoration: BoxDecoration(
+                            color: ColorConstant.primaryColor,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: const TextTitleSmall(
+                            text: "Details",
+                            color: Colors.white,
+                          ),
                         ),
                       )
                     ],

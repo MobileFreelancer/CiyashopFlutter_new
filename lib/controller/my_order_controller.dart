@@ -10,15 +10,16 @@ class MyOrderController extends GetxController {
 
 
   @override
-  void onInit() {
-    orderListApi();
+  Future<void> onInit() async {
     super.onInit();
+    await Future.delayed(const Duration(seconds: 1));
+    await orderListApi();
   }
 
   orderListApi() async {
-    showLoader();
+    // showLoader();
     var result = await _orderRepository.orderList();
-    hideLoader();
+    // hideLoader();
     if (result is MyOrderListModel) {
       print(result);
       // if (result.status == "success") {
