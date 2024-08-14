@@ -1,5 +1,4 @@
 import 'package:ciyashopflutter/component/basic_widget.dart';
-import 'package:ciyashopflutter/component/custom_app_bar.dart';
 import 'package:ciyashopflutter/component/custom_text.dart';
 import 'package:ciyashopflutter/component/section_widget.dart';
 import 'package:ciyashopflutter/controller/product_details_controller.dart';
@@ -8,11 +7,13 @@ import 'package:ciyashopflutter/utils/color_constant.dart';
 import 'package:ciyashopflutter/utils/constant.dart';
 import 'package:ciyashopflutter/utils/size_constant.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:video_player/video_player.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   ProductDetailScreen({super.key});
@@ -21,12 +22,10 @@ class ProductDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
     return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: customAppBarWidgetWithBack(title: "Product Detail", isBack: true),
       body: Stack(
         children: [
-          appBarBackground(),
           Stack(
             children: [
               SingleChildScrollView(
@@ -34,43 +33,41 @@ class ProductDetailScreen extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Container(
+                    SizedBox(
                       width: double.infinity,
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      margin: const EdgeInsets.only(top: 100, right: 20, left: 20, bottom: 20),
-                      decoration: cardViewBox(),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Gap(20),
                           AspectRatio(
                             aspectRatio: 1 / 1,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: ColorConstant.primaryColor.withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(radiusMain),
-                              ),
-                              margin: const EdgeInsets.all(10),
-                              clipBehavior: Clip.hardEdge,
-                              child: Stack(
-                                children: [
-                                  Obx(
-                                    () => PageView.builder(
-                                      controller: controller.pageController.value,
-                                      itemCount: 3,
-                                      onPageChanged: (value) => controller.onPageChange(index: value),
-                                      itemBuilder: (context, index) {
-                                        return Image.asset(Assets.imagesTestproduct, fit: BoxFit.cover);
-                                      },
-                                    ),
+                            child: Stack(
+                              children: [
+                                Obx(
+                                      () => PageView.builder(
+                                    controller: controller.pageController.value,
+                                    itemCount: 3,
+                                    onPageChanged: (value) => controller.onPageChange(index: value),
+                                    itemBuilder: (context, index) {
+                                      return controller.isVideo.value
+                                          ? AspectRatio(
+                                          aspectRatio: controller.videoPlayerController.value.aspectRatio,
+                                          child: VideoPlayer(controller.videoPlayerController))
+                                          : Image.asset(Assets.imagesTestProductBg, fit: BoxFit.cover);
+                                    },
                                   ),
-                                  Column(
+                                ),
+                                Align(
+                                  alignment: Alignment.bottomRight,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      Align(
-                                        alignment: Alignment.topRight,
+                                      InkWell(
+                                        onTap: () {
+                                          controller.videoPlayerController.play();
+                                        },
                                         child: Container(
-                                          margin: const EdgeInsets.only(right: 10, top: 10),
+                                          margin: const EdgeInsets.only(right: 10, top: 20),
                                           padding: const EdgeInsets.all(6),
                                           height: 25,
                                           width: 25,
@@ -91,149 +88,145 @@ class ProductDetailScreen extends StatelessWidget {
                                           ),
                                         ),
                                       ),
-                                      Align(
-                                        alignment: Alignment.topRight,
-                                        child: Container(
-                                          margin: const EdgeInsets.only(right: 10, top: 10),
-                                          padding: const EdgeInsets.all(6),
-                                          height: 25,
-                                          width: 25,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius: BorderRadius.circular(40),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                color: ColorConstant.primaryColor.withOpacity(0.1),
-                                                spreadRadius: 4,
-                                                blurRadius: 4,
-                                                offset: const Offset(0, 0), // changes position of shadow
-                                              ),
-                                            ],
-                                          ),
-                                          child: Image.asset(
-                                            Assets.imagesShare,
-                                          ),
+                                      Container(
+                                        margin: const EdgeInsets.only(right: 10, top: 20),
+                                        padding: const EdgeInsets.all(6),
+                                        height: 25,
+                                        width: 25,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(40),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: ColorConstant.primaryColor.withOpacity(0.1),
+                                              spreadRadius: 4,
+                                              blurRadius: 4,
+                                              offset: const Offset(0, 0), // changes position of shadow
+                                            ),
+                                          ],
+                                        ),
+                                        child: Image.asset(
+                                          Assets.imagesShare,
                                         ),
                                       ),
+                                      const Gap(20),
                                     ],
                                   ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          const Gap(10),
-                          Align(
-                            alignment: Alignment.center,
-                            child: SizedBox(
-                              height: 20,
-                              child: ListView.builder(
-                                shrinkWrap: true,
-                                itemCount: 3,
-                                scrollDirection: Axis.horizontal,
-                                itemBuilder: (context, index) {
-                                  return PageIndicator(index: index);
-                                },
-                              ),
-                            ),
-                          ),
-                          const Gap(10),
-                          Container(
-                            decoration: BoxDecoration(
-                              color: ColorConstant.primaryColor.withOpacity(0.05),
-                              borderRadius: BorderRadius.circular(radiusMain),
-                            ),
-                            padding: const EdgeInsets.all(20),
-                            margin: const EdgeInsets.all(10),
-                            clipBehavior: Clip.hardEdge,
-                            child: Column(
-                              children: [
-                                const TextTitleLarge(
-                                  text: "Fire-Boltt Phoenix Bluetooth Calling Smartwatch...",
-                                  color: Colors.black,
-                                  textAlign: TextAlign.start,
-                                  maxLine: 2,
                                 ),
-                                const Gap(10),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        TextTitleSmall(
-                                          text: r"$49",
-                                          color: ColorConstant.primaryColor,
-                                        ),
-                                        const Gap(5),
-                                        Text(
-                                          r"$49",
-                                          maxLines: 1,
-                                          overflow: TextOverflow.ellipsis,
-                                          style: GoogleFonts.getFont(
-                                            FontsConstants.yantramanav,
-                                            textStyle: Theme.of(context).textTheme.titleSmall?.apply(
-                                                  decoration: TextDecoration.lineThrough,
-                                                  decorationThicknessDelta: 0,
-                                                  decorationThicknessFactor: 1,
-                                                  color: ColorConstant.textBody,
-                                                ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    RatingBar(
-                                      initialRating: 3,
-                                      direction: Axis.horizontal,
-                                      allowHalfRating: true,
-                                      itemCount: 5,
-                                      ratingWidget: RatingWidget(
-                                        full: const Icon(Icons.star_outlined, color: Colors.yellow),
-                                        empty: const Icon(Icons.star_outline, color: Colors.grey),
-                                        half: const Icon(Icons.star_half_outlined, color: Colors.yellow),
-                                      ),
-                                      itemPadding: const EdgeInsets.symmetric(horizontal: 1.0),
-                                      onRatingUpdate: (rating) {},
-                                      ignoreGestures: true,
-                                      glow: false,
-                                      itemSize: 15,
-                                    ),
-                                  ],
-                                ),
-                                const Gap(10),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: ColorConstant.primaryColor,
-                                        borderRadius: BorderRadius.circular(radiusMain),
-                                      ),
-                                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                                      child: const TextBodySmall(
-                                        text: "25% Off",
-                                        color: Colors.white,
-                                        textAlign: TextAlign.center,
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 10),
+                                  child: Align(
+                                    alignment: Alignment.bottomCenter,
+                                    child: SizedBox(
+                                      height: 20,
+                                      child: ListView.builder(
+                                        shrinkWrap: true,
+                                        itemCount: 3,
+                                        scrollDirection: Axis.horizontal,
+                                        itemBuilder: (context, index) {
+                                          return PageIndicator(index: index);
+                                        },
                                       ),
                                     ),
-                                    Row(
-                                      children: [
-                                        const TextTitleSmall(
-                                          text: "Availability: ",
-                                          color: ColorConstant.textBody,
-                                          textAlign: TextAlign.center,
-                                        ),
-                                        TextTitleSmall(
-                                          text: "In Stock",
-                                          color: ColorConstant.primaryColor,
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ],
-                                    )
-                                  ],
+                                  ),
                                 ),
                               ],
                             ),
                           ),
                           const Gap(20),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                      margin: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                      decoration: cardViewBox(),
+                      child: Column(
+                        children: [
+                          const TextTitleLarge(
+                            text: "Fire-Boltt Phoenix Bluetooth Calling Smartwatch...",
+                            color: Colors.black,
+                            textAlign: TextAlign.start,
+                            maxLine: 2,
+                          ),
+                          const Gap(10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  TextTitleSmall(
+                                    text: r"$49",
+                                    color: ColorConstant.primaryColor,
+                                  ),
+                                  const Gap(5),
+                                  Text(
+                                    r"$49",
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: GoogleFonts.getFont(
+                                      FontsConstants.yantramanav,
+                                      textStyle: Theme.of(context).textTheme.titleSmall?.apply(
+                                        decoration: TextDecoration.lineThrough,
+                                        decorationThicknessDelta: 0,
+                                        decorationThicknessFactor: 1,
+                                        color: ColorConstant.textBody,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              RatingBar(
+                                initialRating: 3,
+                                direction: Axis.horizontal,
+                                allowHalfRating: true,
+                                itemCount: 5,
+                                ratingWidget: RatingWidget(
+                                  full: const Icon(Icons.star_outlined, color: Colors.yellow),
+                                  empty: const Icon(Icons.star_outline, color: Colors.grey),
+                                  half: const Icon(Icons.star_half_outlined, color: Colors.yellow),
+                                ),
+                                itemPadding: const EdgeInsets.symmetric(horizontal: 1.0),
+                                onRatingUpdate: (rating) {},
+                                ignoreGestures: true,
+                                glow: false,
+                                itemSize: 15,
+                              ),
+                            ],
+                          ),
+                          const Gap(10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: ColorConstant.primaryColor,
+                                  borderRadius: BorderRadius.circular(radiusMain),
+                                ),
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                child: const TextBodySmall(
+                                  text: "25% Off",
+                                  color: Colors.white,
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                              Row(
+                                children: [
+                                  const TextTitleSmall(
+                                    text: "Availability: ",
+                                    color: ColorConstant.textBody,
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  TextTitleSmall(
+                                    text: "In Stock",
+                                    color: ColorConstant.primaryColor,
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
                         ],
                       ),
                     ),
@@ -273,14 +266,14 @@ class ProductDetailScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(3),
                                     ),
                                     child: Obx(
-                                      () => controller.selectedColorIndex.value == index
+                                          () => controller.selectedColorIndex.value == index
                                           ? const Padding(
-                                              padding: EdgeInsets.all(2.0),
-                                              child: Icon(
-                                                Icons.done,
-                                                color: Colors.white,
-                                              ),
-                                            )
+                                        padding: EdgeInsets.all(2.0),
+                                        child: Icon(
+                                          Icons.done,
+                                          color: Colors.white,
+                                        ),
+                                      )
                                           : const SizedBox(),
                                     ),
                                   ),
@@ -311,7 +304,7 @@ class ProductDetailScreen extends StatelessWidget {
                                     controller.selectedSizeIndex.value = index;
                                   },
                                   child: Obx(
-                                    () => Container(
+                                        () => Container(
                                       width: 30,
                                       decoration: BoxDecoration(
                                         color: controller.selectedSizeIndex.value == index ? Colors.black : ColorConstant.whiteColor,
@@ -745,7 +738,7 @@ class ProductDetailScreen extends StatelessWidget {
                                 margin: const EdgeInsets.symmetric(horizontal: 20),
                                 child: VerticalDivider(color: ColorConstant.dividerColor2),
                               ),
-                               Column(
+                              Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   IntrinsicWidth(
@@ -1063,13 +1056,13 @@ class PageIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Obx(
-      () => AnimatedContainer(
+          () => AnimatedContainer(
         alignment: Alignment.center,
         margin: const EdgeInsets.all(5),
         width: 10,
         // width: ref.watch(introSliderVMProvider).currentPage == index ? 15 : 10,
         decoration: BoxDecoration(
-          shape: BoxShape.circle,
+          shape: BoxShape.rectangle,
           color: controller.currentPage.value == index ? ColorConstant.primaryColor : ColorConstant.primaryColor.withOpacity(0.3),
         ),
         duration: duration,

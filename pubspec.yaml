@@ -60,6 +60,7 @@ dependencies:
   google_fonts: ^6.2.1
   connectivity_plus: ^5.0.2
   scratcher: ^2.5.0
+  video_player: ^2.9.1
 
 dev_dependencies:
   flutter_test:
