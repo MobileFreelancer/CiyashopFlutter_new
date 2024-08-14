@@ -13,6 +13,7 @@ import 'package:ciyashopflutter/view/contact_us_screen.dart';
 import 'package:ciyashopflutter/view/filter_product_screen.dart';
 import 'package:ciyashopflutter/view/my_coupon_screen.dart';
 import 'package:ciyashopflutter/view/order_deliver_success_screen.dart';
+import 'package:ciyashopflutter/view/profile/ProfileListitem.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
@@ -178,102 +179,138 @@ class ProfileViewPage extends StatelessWidget {
                       const Gap(20),
                       Container(
                         decoration: cardViewBox(),
-                        child: ListView.separated(
-                          shrinkWrap: true,
-                          physics: const NeverScrollableScrollPhysics(),
-                          padding: EdgeInsets.zero,
-                          itemBuilder: (context, index) {
-                            return InkWell(
-                              splashFactory: NoSplash.splashFactory,
-                              onTap: () {
-                                switch (controller.profileList[index].name) {
-                                  case "Login":
-                                    Get.offNamed(RoutesName.signInScreen);
-                                    break;
+                        child: Column(
+                          children: [
+                            Container(
 
-                                  case "My Address":
-                                    Get.to(RoutesName.myAddressScreen);
-                                    break;
+                              child: ListView.separated(
+                                shrinkWrap: true,
+                                physics: const NeverScrollableScrollPhysics(),
+                                padding: EdgeInsets.zero,
+                                itemBuilder: (context, index) {
+                                  return InkWell(
+                                    splashFactory: NoSplash.splashFactory,
+                                    onTap: () {
+                                      switch (controller.profileList[index].name) {
+                                        case "Login":
+                                          Get.offNamed(RoutesName.signInScreen);
+                                          break;
 
-                                  case "Contact Us":
-                                    Get.to(RoutesName.contactUsScreen);
-                                    break;
+                                        case "My Address":
+                                          Get.to(RoutesName.myAddressScreen);
+                                          break;
 
-                                  case "About Us":
-                                    Get.to(RoutesName.aboutUsScreen);
-                                    break;
+                                        case "Contact Us":
+                                          Get.to(RoutesName.contactUsScreen);
+                                          break;
 
-                                  case "My Coupons":
-                                    Get.to(RoutesName.myCouponScreen);
-                                    break;
+                                        case "About Us":
+                                          Get.to(RoutesName.aboutUsScreen);
+                                          break;
 
-                                  case "Choose Currency":
-                                    showCurrencyDialog();
-                                    break;
+                                        case "My Coupons":
+                                          Get.to(RoutesName.myCouponScreen);
+                                          break;
 
-                                  case "My Points":
-                                    Get.to(() => OrderDeliverSuccessScreen());
-                                    break;
+                                        case "Choose Currency":
+                                          showCurrencyDialog();
+                                          break;
 
-                                  case "My Orders":
-                                    Get.to(() => OrderDetailScreen());
-                                    break;
+                                        case "My Points":
+                                          Get.to(() => OrderDeliverSuccessScreen());
+                                          break;
 
-                                  case "Account Setting":
-                                    Get.to(() => FilterProductScreen());
-                                    break;
-                                }
-                              },
-                              child: SizedBox(
-                                width: double.infinity,
-                                height: 50,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        const Gap(20),
-                                        ImageIcon(
-                                          AssetImage(controller.profileList[index].logo.toString()),
-                                          size: 20,
-                                        ),
-                                        const Gap(20),
-                                        TextBodyMedium(text: controller.profileList[index].name.toString()),
-                                      ],
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                                      child: controller.profileList[index] == "Notification"
-                                          ? Obx(
-                                              () => SizedBox(
-                                                width: 50,
-                                                height: 40,
-                                                child: FittedBox(
-                                                  fit: BoxFit.fill,
-                                                  child: Switch(
-                                                    value: controller.isNotificationEnabled.value,
-                                                    activeColor: ColorConstant.primaryColor,
-                                                    onChanged: (bool value) {
-                                                      controller.isNotificationEnabled.value = value;
-                                                    },
-                                                  ),
-                                                ),
+                                        case "My Orders":
+                                          Get.to(() => OrderDetailScreen());
+                                          break;
+
+                                        case "Account Setting":
+                                          Get.to(() => FilterProductScreen());
+                                          break;
+                                      }
+                                    },
+                                    child: SizedBox(
+                                      width: double.infinity,
+                                      height: 50,
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              const Gap(20),
+                                              ImageIcon(
+                                                AssetImage(controller.profileList[index].logo.toString()),
+                                                size: 20,
                                               ),
-                                            )
-                                          : const ImageIcon(
-                                              AssetImage(Assets.imagesArrow),
-                                              size: 15,
-                                            ),
+                                              const Gap(20),
+                                              TextBodyMedium(text: controller.profileList[index].name.toString()),
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                                            child: controller.profileList[index] == "Notification"
+                                                ? Obx(
+                                                    () => SizedBox(
+                                                      width: 50,
+                                                      height: 40,
+                                                      child: FittedBox(
+                                                        fit: BoxFit.fill,
+                                                        child: Switch(
+                                                          value: controller.isNotificationEnabled.value,
+                                                          activeColor: ColorConstant.primaryColor,
+                                                          onChanged: (bool value) {
+                                                            controller.isNotificationEnabled.value = value;
+                                                          },
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  )
+                                                : const ImageIcon(
+                                                    AssetImage(Assets.imagesArrow),
+                                                    size: 15,
+                                                  ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
-                                  ],
-                                ),
+                                  );
+                                },
+                                separatorBuilder: (context, index) => Divider(color: ColorConstant.textBody.withOpacity(0.1)),
+                                itemCount: controller.profileList.length,
                               ),
-                            );
-                          },
-                          separatorBuilder: (context, index) => Divider(color: ColorConstant.textBody.withOpacity(0.1)),
-                          itemCount: controller.profileList.length,
+                            ),
+                            Container(
+                              child: ListView.separated(
+                                shrinkWrap: true,
+                                physics: const NeverScrollableScrollPhysics(),
+                                padding: EdgeInsets.zero,
+                                itemBuilder: (context, index) {
+                                  return InkWell(
+                                    splashFactory: NoSplash.splashFactory,
+                                    onTap: () {
+                                      switch (controller.webViewPages[index].name) {
+                                        case "Login":
+                                          Get.offNamed(RoutesName.signInScreen);
+                                          break;
+
+                                        case "My Address":
+                                          Get.to(RoutesName.myAddressScreen);
+                                          break;
+
+                                      }
+                                    },
+                                    child: Profilelistitem(index: index),
+                                  );
+                                },
+                                separatorBuilder: (context, index) => Divider(color: ColorConstant.textBody.withOpacity(0.1)),
+                                itemCount: controller.webViewPages.length,
+                              ),
+                            ),
+
+                          ],
                         ),
                       )
+
                     ],
                   ),
                 ),
