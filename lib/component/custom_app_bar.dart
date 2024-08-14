@@ -68,7 +68,7 @@ customAppBarWidgetWithBack({String title = "Product detail", bool isBack = false
     title: Builder(
       builder: (context) => TextHeadlineSmall(
         text: title,
-        color: Colors.white,
+        color: ColorConstant.secondaryColor,
       ),
     ),
     centerTitle: true,

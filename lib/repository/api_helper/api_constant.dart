@@ -18,6 +18,10 @@ class APIConstant {
   final String socialSignInApi = "${Apis.MAIN_URL}social_login";
   final String forgotPasswordApi = "${Apis.MAIN_URL}forgot_password";
   final String updatePasswordApi = "${Apis.MAIN_URL}update_password";
+  final String customerApi = "${Apis.MAIN_URL}customer";
+  final String notificationStatusApi = "${Apis.MAIN_URL}notifications_status";
+  final String updateUserImageApi = "${Apis.MAIN_URL}update_user_image";
+  final String infoPagesApi = "${Apis.MAIN_URL}info_pages";
 
   //API_REQUEST PARAM
   final String appVer = "app-ver";
@@ -28,6 +32,7 @@ class APIConstant {
   final String deviceToken = "deviceToken";
   final String userName = "username";
   final String mobile = "mobile";
+  final String userId = "user_id";
 
 }
 

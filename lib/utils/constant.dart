@@ -1,5 +1,6 @@
 //APP Configuration
 
+import 'package:ciyashopflutter/model/home_model.dart' as home;
 import 'package:ciyashopflutter/view/splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,12 +12,11 @@ final displaySize = MediaQuery.of(navigatorKey.currentContext!).size;
 final displayHeight = displaySize.height;
 final displayWidth = displaySize.width;
 
-// Configuration
-String homeLayout = "";
-bool isGuestCheckoutActive = false;
-bool isLogin = false;
-//bool isSlider = false;
-bool isRtl = false;
-String siteLanguage = "";
-bool walletActive = false;
-String isUserExists = "";
+// Profile Configuration Constants
+
+class Constant {
+  static bool IS_CURRENCY_SWITCHER_ACTIVE = true;
+  static bool IS_WPML_ACTIVE = true;
+  static List<dynamic>? languageList = home.HomeModel().wpmlLanguages;
+  static List<dynamic>? webViewPages = home.HomeModel().pgsWooApiWebViewPages;
+}

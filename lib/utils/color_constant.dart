@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ColorConstant {
   static Color primaryColor = HexColor.fromHex("#4C7CF0");
-  static Color secondaryColor = HexColor.fromHex('#02022E');
+  static Color secondaryColor = HexColor.fromHex('#ffffff');
   static Color lightColor = HexColor.lighten(primaryColor, 90);
   static Color negativeColor = HexColor.fromHex("#EB5757");
   static Color whiteColor = Colors.white;
