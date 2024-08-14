@@ -50,3 +50,4 @@ ios/Runner.xcodeproj/project.xcworkspace/
 ios/Runner.xcodeproj/xcshareddata/
 ios/Runner/GeneratedPluginRegistrant.h
 ios/Runner/Info.plist
+ios/.symlinks/plugins/
